@@ -2,6 +2,7 @@ from xml.etree.ElementTree import Element
 import xml.etree.ElementTree as et
 import requests
 
+PLANETS_CATEGORY_NAME = "Planets & Moons"
 
 class Convert:
 
@@ -18,6 +19,7 @@ class Convert:
         self.images_ir = et.SubElement(self.images, "Folder", self.get_default_attributes("IR"))
         self.images_microwave = et.SubElement(self.images, "Folder", self.get_default_attributes("Microwave"))
         self.images_radio = et.SubElement(self.images, "Folder", self.get_default_attributes("Radio"))
+        self.images_planets = et.SubElement(self.images, "Folder", self.get_default_attributes(PLANETS_CATEGORY_NAME))
         self.images_uncategorized = et.SubElement(self.images, "Folder", self.get_default_attributes("Uncategorized"))
 
         self.heatmaps_by_object = et.SubElement(self.heatmaps, "Folder", self.get_default_attributes("By Object Type"))
@@ -33,6 +35,7 @@ class Convert:
         self.add_version_dependent(self.images_uv, False)
         self.add_version_dependent(self.images_visible, False)
         self.add_version_dependent(self.images_microwave, False)
+        self.add_version_dependent(self.images_planets, False)
         self.add_version_dependent(self.images_uncategorized, False)
         self.add_version_dependent(self.heatmaps, False)
         self.add_version_dependent(self.heatmaps_by_date, False)
@@ -114,7 +117,11 @@ class Convert:
         elif "millimeter" in regime or "microwave" in regime:
             return "Microwave"
         else:
-            return "Uncategorized"
+            hips_frame = self.get_element_attribute(element, 'hips_frame').lower()
+            if "galactic" in hips_frame or "ecliptic" in hips_frame or "equatorial" in hips_frame:
+                return "Uncategorized"
+            else:
+                return PLANETS_CATEGORY_NAME
 
     def convert(self, json_object):
         for element in json_object:
@@ -160,7 +167,11 @@ class Convert:
         elif "millimeter" in regime or "microwave" in regime:
             self.add_image_set(element, self.images_microwave)
         else:
-            self.add_image_set(element, self.images_uncategorized)
+            hips_frame = self.get_element_attribute(element, 'hips_frame').lower()
+            if "galactic" in hips_frame or "ecliptic" in hips_frame or "equatorial" in hips_frame:
+                self.add_image_set(element, self.images_uncategorized)
+            else:
+                self.add_image_set(element, self.images_planets)
 
     def add_heatmap(self, element: Element):
         category = self.get_element_attribute(element, "client_category")
@@ -174,8 +185,10 @@ class Convert:
         self.add_image_set(element, self.heatmaps)
 
     def add_image_set(self, element: Element, parent: Element):
+        bandpass_name = self.get_bandpass_name(element)
+        dataset_type = "Planet" if self.get_bandpass_name(element) == PLANETS_CATEGORY_NAME else "Sky"
         image_set = et.SubElement(parent, "ImageSet", DemUrl="", MSRCommunityId="0", MSRComponentId="0", Permission="0",
-                                  Generic="False", DataSetType="Sky", BandPass=self.get_bandpass_name(element),
+                                  Generic="False", DataSetType=dataset_type, BandPass=bandpass_name,
                                   Url=self.get_element_attribute(element, 'hips_service_url').strip("/") + "/Norder{0}/Dir{1}/Npix{2}",
                                   TileLevels=self.get_element_attribute(element, 'hips_order'), WidthFactor="1",
                                   Sparse="False", Rotation="0", QuadTreeMap="0123", Projection="Healpix",
