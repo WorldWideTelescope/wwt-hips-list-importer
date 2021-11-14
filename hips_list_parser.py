@@ -186,7 +186,14 @@ class Convert:
 
     def add_image_set(self, element: Element, parent: Element):
         bandpass_name = self.get_bandpass_name(element)
-        dataset_type = "Planet" if self.get_bandpass_name(element) == PLANETS_CATEGORY_NAME else "Sky"
+
+        dataset_type = "Sky"
+        if self.get_bandpass_name(element) == PLANETS_CATEGORY_NAME:
+            if "panorama" in self.get_element_attribute(element, 'obs_title').lower():
+                dataset_type = "Panorama"
+            else:
+                dataset_type = "Planet"
+
         image_set = et.SubElement(parent, "ImageSet", DemUrl="", MSRCommunityId="0", MSRComponentId="0", Permission="0",
                                   Generic="False", DataSetType=dataset_type, BandPass=bandpass_name,
                                   Url=self.get_element_attribute(element, 'hips_service_url').strip("/") + "/Norder{0}/Dir{1}/Npix{2}",
