@@ -1,4 +1,4 @@
-updated: 2021-12-16T15:16:37.982340
+updated: 2021-12-16T17:44:46.079170
 
 CDS/B/denis/denis	The DENIS database (DENIS Consortium, 2005) (denis)
 CDS/I/252/out	The USNO-A2.0 Catalogue (Monet+ 1998)
