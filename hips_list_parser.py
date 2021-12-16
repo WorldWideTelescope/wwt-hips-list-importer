@@ -3,6 +3,7 @@
 # Copyright 2021 the .NET Foundation
 # Licensed under the MIT License
 
+import argparse
 from xml.etree.ElementTree import Element
 import xml.etree.ElementTree as et
 import requests
@@ -286,9 +287,23 @@ class Convert:
         )
 
 
-conv = Convert()
+def entrypoint():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--toc",
+        action="store_true",
+        help="Emit table-of-contents file rather than WTML",
+    )
 
-hips_list_json = requests.get(
-    "http://aladin.u-strasbg.fr/hips/globalhipslist?fmt=json"
-).json()
-conv.convert(hips_list_json).write_file("hips-list.wtml")
+    settings = parser.parse_args()
+
+    conv = Convert()
+
+    hips_list_json = requests.get(
+        "http://aladin.u-strasbg.fr/hips/globalhipslist?fmt=json"
+    ).json()
+    conv.convert(hips_list_json).write_file("hips-list.wtml")
+
+
+if __name__ == "__main__":
+    entrypoint()
