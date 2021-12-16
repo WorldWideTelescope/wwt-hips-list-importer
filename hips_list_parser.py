@@ -8,6 +8,7 @@ from datetime import datetime
 from xml.etree.ElementTree import Element
 import xml.etree.ElementTree as et
 import requests
+import yaml
 
 PLANETS_CATEGORY_NAME = "Planets & Moons"
 
@@ -16,8 +17,12 @@ class Convert:
     toc = False
     "If true, emit table-of-contents rather than WTML."
 
-    def __init__(self, toc=False):
+    yaml = False
+    "If true, emit flat YAML file rather than WTML."
+
+    def __init__(self, toc=False, yaml=False):
         self.toc = toc
+        self.yaml = yaml
 
         self.root = et.Element("Folder", self.get_default_attributes("HIPS Surveys"))
         self.images = et.SubElement(
@@ -83,6 +88,8 @@ class Convert:
 
         if toc:
             self.toc_data = {}
+        if yaml:
+            self.yaml_data = []
 
     def add_version_dependent(self, parent: Element, is_dependent: bool):
         version_dependent = et.Element("VersionDependent")
@@ -259,6 +266,37 @@ class Convert:
             else:
                 dataset_type = "Planet"
 
+        url = (
+            self.get_element_attribute(element, "hips_service_url").strip("/")
+            + "/Norder{0}/Dir{1}/Npix{2}"
+        )
+
+        tile_levels = self.get_element_attribute(element, "hips_order")
+        name = self.get_name(element)
+        file_type = self.get_file_type(element)
+        credits = self.get_credits(element)
+        credits_url = self.get_credits(element)
+        thumbnail_url = (
+            self.get_element_attribute(element, "hips_service_url").strip("/")
+            + "/preview.jpg"
+        )
+
+        if self.yaml:
+            info = {
+                "_id": element["ID"],
+                "_name": name,
+                "bandpass": bandpass_name,
+                "credits": credits,
+                "credits_url": credits_url,
+                "file_type": file_type,
+                "tile_levels": tile_levels,
+                "thumbnail_url": thumbnail_url,
+                "type": dataset_type,
+                "url": url,
+            }
+            self.yaml_data.append(info)
+            return
+
         image_set = et.SubElement(
             parent,
             "ImageSet",
@@ -269,16 +307,15 @@ class Convert:
             Generic="False",
             DataSetType=dataset_type,
             BandPass=bandpass_name,
-            Url=self.get_element_attribute(element, "hips_service_url").strip("/")
-            + "/Norder{0}/Dir{1}/Npix{2}",
-            TileLevels=self.get_element_attribute(element, "hips_order"),
+            Url=url,
+            TileLevels=tile_levels,
             WidthFactor="1",
             Sparse="False",
             Rotation="0",
             QuadTreeMap="0123",
             Projection="Healpix",
-            Name=self.get_name(element),
-            FileType=self.get_file_type(element),
+            Name=name,
+            FileType=file_type,
             CenterY="0",
             CenterX="0",
             BottomsUp="False",
@@ -292,18 +329,24 @@ class Convert:
             MeanRadius="1",
         )
 
-        et.SubElement(image_set, "Credits").text = self.get_credits(element)
-        et.SubElement(image_set, "CreditsUrl").text = self.get_credits_url(element)
-        et.SubElement(image_set, "ThumbnailUrl").text = (
-            self.get_element_attribute(element, "hips_service_url").strip("/")
-            + "/preview.jpg"
-        )
+        et.SubElement(image_set, "Credits").text = credits
+        et.SubElement(image_set, "CreditsUrl").text = credits_url
+        et.SubElement(image_set, "ThumbnailUrl").text = thumbnail_url
 
     def emit_toc(self, stream):
         print(f"updated: {datetime.utcnow().isoformat()}\n", file=stream)
 
         for id, name in sorted(self.toc_data.items(), key=lambda t: t[0]):
             print(f"{id}\t{name}", file=stream)
+
+    def emit_yaml(self, stream):
+        yaml.dump_all(
+            sorted(self.yaml_data, key=lambda r: r["_id"]),
+            stream=stream,
+            allow_unicode=True,
+            sort_keys=True,
+            indent=2,
+        )
 
 
 def entrypoint():
@@ -313,10 +356,15 @@ def entrypoint():
         action="store_true",
         help="Emit table-of-contents file rather than WTML",
     )
+    parser.add_argument(
+        "--yaml",
+        action="store_true",
+        help="Emit flat YAML data file rather than WTML",
+    )
 
     settings = parser.parse_args()
 
-    conv = Convert(toc=settings.toc)
+    conv = Convert(toc=settings.toc, yaml=settings.yaml)
 
     hips_list_json = requests.get(
         "http://aladin.u-strasbg.fr/hips/globalhipslist?fmt=json"
@@ -326,6 +374,9 @@ def entrypoint():
     if settings.toc:
         with open("toc.txt", "wt") as f:
             conv.emit_toc(f)
+    elif settings.yaml:
+        with open("datasets.yml", "wt") as f:
+            conv.emit_yaml(f)
     else:
         conv.write_file("hips-list.wtml")
 
