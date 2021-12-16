@@ -4,6 +4,7 @@
 # Licensed under the MIT License
 
 import argparse
+from datetime import datetime
 from xml.etree.ElementTree import Element
 import xml.etree.ElementTree as et
 import requests
@@ -12,7 +13,12 @@ PLANETS_CATEGORY_NAME = "Planets & Moons"
 
 
 class Convert:
-    def __init__(self):
+    toc = False
+    "If true, emit table-of-contents rather than WTML."
+
+    def __init__(self, toc=False):
+        self.toc = toc
+
         self.root = et.Element("Folder", self.get_default_attributes("HIPS Surveys"))
         self.images = et.SubElement(
             self.root, "Folder", self.get_default_attributes("Images")
@@ -74,6 +80,9 @@ class Convert:
         self.add_version_dependent(self.heatmaps, False)
         self.add_version_dependent(self.heatmaps_by_date, False)
         self.add_version_dependent(self.heatmaps_by_object, False)
+
+        if toc:
+            self.toc_data = {}
 
     def add_version_dependent(self, parent: Element, is_dependent: bool):
         version_dependent = et.Element("VersionDependent")
@@ -237,6 +246,10 @@ class Convert:
         self.add_image_set(element, self.heatmaps)
 
     def add_image_set(self, element: Element, parent: Element):
+        if self.toc:
+            self.toc_data[element["ID"]] = self.get_name(element)
+            return
+
         bandpass_name = self.get_bandpass_name(element)
 
         dataset_type = "Sky"
@@ -286,6 +299,12 @@ class Convert:
             + "/preview.jpg"
         )
 
+    def emit_toc(self, stream):
+        print(f"updated: {datetime.utcnow().isoformat()}\n", file=stream)
+
+        for id, name in sorted(self.toc_data.items(), key=lambda t: t[0]):
+            print(f"{id}\t{name}", file=stream)
+
 
 def entrypoint():
     parser = argparse.ArgumentParser()
@@ -297,12 +316,18 @@ def entrypoint():
 
     settings = parser.parse_args()
 
-    conv = Convert()
+    conv = Convert(toc=settings.toc)
 
     hips_list_json = requests.get(
         "http://aladin.u-strasbg.fr/hips/globalhipslist?fmt=json"
     ).json()
-    conv.convert(hips_list_json).write_file("hips-list.wtml")
+    conv.convert(hips_list_json)
+
+    if settings.toc:
+        with open("toc.txt", "wt") as f:
+            conv.emit_toc(f)
+    else:
+        conv.write_file("hips-list.wtml")
 
 
 if __name__ == "__main__":
