@@ -1,0 +1,851 @@
+CDS/B/denis/denis	The DENIS database (DENIS Consortium, 2005) (denis)
+CDS/I/252/out	The USNO-A2.0 Catalogue (Monet+ 1998)
+CDS/I/254/out	The HST Guide Star Catalog, Version 1.2 (Lasker+ 1996)
+CDS/I/259/tyc2	The Tycho-2 Catalogue (Hog+ 2000) (tyc2)
+CDS/I/271/out	The GSC 2.2 Catalogue (STScI, 2001)
+CDS/I/284/out	The USNO-B1.0 Catalog (Monet+ 2003)
+CDS/I/305/out	The Guide Star Catalog, Version 2.3.2 (GSC2.3) (STScI, 2006)
+CDS/I/312/sample	PPMX Catalog of positions and proper motions (Roeser+ 2008)
+CDS/I/317/sample	The PPMXL Catalog (Roeser+ 2010)
+CDS/I/319/xpm	XPM Catalog of positions and proper motions (Fedorov+ 2011) (xpm)
+CDS/I/320/spm4	SPM 4.0 Catalog (Girard+, 2011) (spm4)
+CDS/I/322A/out	UCAC4 Catalogue (Zacharias+, 2012)
+CDS/I/324/igsl3	The Initial Gaia Source List (IGSL) (Smart, 2013) (igsl3)
+CDS/I/327/cmc15	Carlsberg Meridian Catalog 15 (CMC15) (CMC, 2011) (cmc15)
+CDS/I/329/urat1	URAT1 Catalog (Zacharias+ 2015) (urat1)
+CDS/I/337/gaia	Gaia DR1 (Gaia Collaboration, 2016) (gaia)
+CDS/I/337/tgas	Gaia DR1 (Gaia Collaboration, 2016) (tgas)
+CDS/I/339/hsoy	Hot Stuff for One Year (HSOY) (Altmann+, 2017) (hsoy)
+CDS/I/340/ucac5	UCAC5 Catalogue (Zacharias+ 2017) (ucac5)
+CDS/I/345/gaia2	Gaia DR2 (Gaia Collaboration, 2018) (gaia2)
+CDS/II/246/out	2MASS All-Sky Catalog of Point Sources (Cutri+ 2003)
+CDS/II/281/2mass6x	2MASS 6X Point Source Working Database / Catalog (Cutri+ 2006) (2mass6x)
+CDS/II/293/glimpse	GLIMPSE Source Catalog (I + II + 3D) (IPAC 2008) (glimpse)
+CDS/II/294/sdss7	The SDSS Photometric Catalog, Release 7 (Adelman-McCarthy+, 2009) (sdss7)
+CDS/II/312/ais	GALEX-DR5 (GR5) sources from AIS and MIS (Bianchi+ 2011) (ais)
+CDS/II/328/allwise	AllWISE Data Release (Cutri+ 2013) (allwise)
+CDS/II/336/apass9	AAVSO Photometric All Sky Survey (APASS) DR9 (Henden+, 2016) (apass9)
+CDS/II/341/vphasp	VPHAS+ DR2 survey (Drew+, 2016) (vphasp)
+CDS/II/343/viking2	VIKING catalogue data release 2 (Edge+, 2016) (viking2)
+CDS/II/347/kids_dr3	KiDS-ESO-DR3 multi-band source catalog (de Jong+, 2017) (kids_dr3)
+CDS/II/348/vvv2	VISTA Variable in the Via Lactea Survey DR2 (Minniti+, 2017) (vvv2)
+CDS/II/349/ps1	The Pan-STARRS release 1 (PS1) Survey - DR1 (Chambers+, 2016) (ps1)
+CDS/II/350/vstatlas	VLT Survey Telescope ATLAS (Shanks+, 2015) (vstatlas)
+CDS/II/351/vmc_dr4	VISTA Magellanic Survey (VMC) catalog (Cioni+, 2011) (vmc_dr4)
+CDS/P/2MASS/color	2MASS color J (1.23um), H (1.66um), K (2.16um)
+CDS/P/2MASS6X/H	2MASS6X H (1.66um)
+CDS/P/2MASS6X/J	2MASS6X J (1.23um)
+CDS/P/2MASS6X/K	2MASS6X K (2.16um)
+CDS/P/2MASS6X/color	2MASS6X color J (1.23um) & K (2.16um)
+CDS/P/AKARI/FIS/Color	AKARI FIS Color WideL (140um), WideS (90um), N60 (65um)
+CDS/P/AKARI/FIS/N160	AKARI FIS N160 (160um)
+CDS/P/AKARI/FIS/N60	AKARI FIS N60 (65um)
+CDS/P/AKARI/FIS/WideL	AKARI FIS WideL (140um)
+CDS/P/AKARI/FIS/WideS	AKARI FIS WideS (90um)
+CDS/P/ATLASGAL	ATLASGAL 850 um
+CDS/P/ATLASGAL/APEXPlanck	ATLASGAL APEX-Planck 850um
+CDS/P/CFHTLS/D/color/ugi	CFHTLS-D-color-ugi
+CDS/P/CFHTLS/D/g	CFHTLS-D-g
+CDS/P/CFHTLS/D/i	CFHTLS-D-i
+CDS/P/CFHTLS/D/r	CFHTLS-D-r
+CDS/P/CFHTLS/D/u	CFHTLS-D-u
+CDS/P/CFHTLS/D/z	CFHTLS-D-z
+CDS/P/CFHTLS/W/Color/ugi	CFHTLS-W-colored-ugi
+CDS/P/CFHTLS/W/g	CFHTLS-W-g
+CDS/P/CFHTLS/W/i	CFHTLS-W-i
+CDS/P/CFHTLS/W/r	CFHTLS-W-r
+CDS/P/CFHTLS/W/u	CFHTLS-W-u
+CDS/P/CFHTLS/W/z	CFHTLS-W-z
+CDS/P/CO	CO composite survey
+CDS/P/COHRS	CO High Resolution Survey (HARP/JCMT)
+CDS/P/DECaLS/DR3/color	DECaLS DR3 color
+CDS/P/DECaLS/DR5/color	DECaLS DR5 color
+CDS/P/DECaLS/DR5/g	DECaLS DR5 g
+CDS/P/DECaLS/DR5/r	DECaLS DR5 r
+CDS/P/DECaPS/DR1/color	DECaPS DR1 color
+CDS/P/DECaPS/DR1/g	DECaPS DR1 g
+CDS/P/DES-DR1/Y	DES-DR1 Y
+CDS/P/DES-DR1/g	DES-DR1 g
+CDS/P/DES-DR1/i	DES-DR1 i
+CDS/P/DES-DR1/r	DES-DR1 r
+CDS/P/DES-DR1/z	DES-DR1 z
+CDS/P/DM/I/345/gaia2	Density map for Gaia DR2 (I/345/gaia2)
+CDS/P/DM/flux-Bp/I/345/gaia2	Bp flux map for table I/345/gaia2 (Gaia DR2)
+CDS/P/DM/flux-G/I/345/gaia2	G flux map for table I/345/gaia2 (Gaia DR2)
+CDS/P/DM/flux-Rp/I/345/gaia2	Rp flux map for table I/345/gaia2 (Gaia DR2)
+CDS/P/DM/flux-color-Rp-G-Bp/I/345/gaia2	Color flux map for I/345/gaia2 (Gaia DR2)
+CDS/P/DM/radial-velocity/I/345/gaia2	Radial velocity map for I/345/gaia2 (Gaia DR2)
+CDS/P/DM/simbad-biblio/allObjects	Simbad heatmap - all objects
+CDS/P/DM/simbad-biblio/otypes/Galaxy	Simbad heatmap - Galaxy
+CDS/P/DM/simbad-biblio/otypes/HII	Simbad heatmap - HII
+CDS/P/DM/simbad-biblio/otypes/Infrared	Simbad heatmap - Infrared
+CDS/P/DM/simbad-biblio/otypes/Nebula	Simbad heatmap - Nebula
+CDS/P/DM/simbad-biblio/otypes/Other	Simbad heatmap - Other
+CDS/P/DM/simbad-biblio/otypes/Radio	Simbad heatmap - Radio
+CDS/P/DM/simbad-biblio/otypes/Star	Simbad heatmap - Star
+CDS/P/DM/simbad-biblio/otypes/UV	Simbad heatmap - UV
+CDS/P/DM/simbad-biblio/otypes/X	Simbad heatmap - X
+CDS/P/DM/simbad-biblio/pub-dates/1850-1900	Simbad heatmap - 1850-1900
+CDS/P/DM/simbad-biblio/pub-dates/1900-1910	Simbad heatmap - 1900-1910
+CDS/P/DM/simbad-biblio/pub-dates/1910-1920	Simbad heatmap - 1910-1920
+CDS/P/DM/simbad-biblio/pub-dates/1920-1930	Simbad heatmap - 1920-1930
+CDS/P/DM/simbad-biblio/pub-dates/1930-1940	Simbad heatmap - 1930-1940
+CDS/P/DM/simbad-biblio/pub-dates/1940-1945	Simbad heatmap - 1940-1945
+CDS/P/DM/simbad-biblio/pub-dates/1945-1950	Simbad heatmap - 1945-1950
+CDS/P/DM/simbad-biblio/pub-dates/1950-1955	Simbad heatmap - 1950-1955
+CDS/P/DM/simbad-biblio/pub-dates/1955-1960	Simbad heatmap - 1955-1960
+CDS/P/DM/simbad-biblio/pub-dates/1960-1965	Simbad heatmap - 1960-1965
+CDS/P/DM/simbad-biblio/pub-dates/1965-1970	Simbad heatmap - 1965-1970
+CDS/P/DM/simbad-biblio/pub-dates/1970-1975	Simbad heatmap - 1970-1975
+CDS/P/DM/simbad-biblio/pub-dates/1975-1980	Simbad heatmap - 1975-1980
+CDS/P/DM/simbad-biblio/pub-dates/1980-1985	Simbad heatmap - 1980-1985
+CDS/P/DM/simbad-biblio/pub-dates/1985-1990	Simbad heatmap - 1985-1990
+CDS/P/DM/simbad-biblio/pub-dates/1991	Simbad heatmap - 1991
+CDS/P/DM/simbad-biblio/pub-dates/1992	Simbad heatmap - 1992
+CDS/P/DM/simbad-biblio/pub-dates/1993	Simbad heatmap - 1993
+CDS/P/DM/simbad-biblio/pub-dates/1994	Simbad heatmap - 1994
+CDS/P/DM/simbad-biblio/pub-dates/1995	Simbad heatmap - 1995
+CDS/P/DM/simbad-biblio/pub-dates/1996	Simbad heatmap - 1996
+CDS/P/DM/simbad-biblio/pub-dates/1997	Simbad heatmap - 1997
+CDS/P/DM/simbad-biblio/pub-dates/1998	Simbad heatmap - 1998
+CDS/P/DM/simbad-biblio/pub-dates/1999	Simbad heatmap - 1999
+CDS/P/DM/simbad-biblio/pub-dates/2000	Simbad heatmap - 2000
+CDS/P/DM/simbad-biblio/pub-dates/2001	Simbad heatmap - 2001
+CDS/P/DM/simbad-biblio/pub-dates/2002	Simbad heatmap - 2002
+CDS/P/DM/simbad-biblio/pub-dates/2003	Simbad heatmap - 2003
+CDS/P/DM/simbad-biblio/pub-dates/2004	Simbad heatmap - 2004
+CDS/P/DM/simbad-biblio/pub-dates/2005	Simbad heatmap - 2005
+CDS/P/DM/simbad-biblio/pub-dates/2006	Simbad heatmap - 2006
+CDS/P/DM/simbad-biblio/pub-dates/2007	Simbad heatmap - 2007
+CDS/P/DM/simbad-biblio/pub-dates/2008	Simbad heatmap - 2008
+CDS/P/DM/simbad-biblio/pub-dates/2009	Simbad heatmap - 2009
+CDS/P/DM/simbad-biblio/pub-dates/2010	Simbad heatmap - 2010
+CDS/P/DM/simbad-biblio/pub-dates/2011	Simbad heatmap - 2011
+CDS/P/DM/simbad-biblio/pub-dates/2012	Simbad heatmap - 2012
+CDS/P/DM/simbad-biblio/pub-dates/2013	Simbad heatmap - 2013
+CDS/P/DM/simbad-biblio/pub-dates/2014	Simbad heatmap - 2014
+CDS/P/DM/simbad-biblio/pub-dates/2015	Simbad heatmap - 2015
+CDS/P/DM/simbad-biblio/pub-dates/2016	Simbad heatmap - 2016
+CDS/P/DM/simbad-biblio/pub-dates/2017	Simbad heatmap - 2017
+CDS/P/DM/simbad-biblio/pub-dates/2018	Simbad heatmap - 2018
+CDS/P/DM/simbad-biblio/pub-dates/2019	Simbad heatmap - 2019
+CDS/P/DM/vizMine	vizMine: density map for all VizieR tables
+CDS/P/DSS2/NIR	DSS2 NIR (XI+IS)
+CDS/P/DSS2/blue	DSS2 Blue (XJ+S)
+CDS/P/DSS2/color	DSS colored
+CDS/P/DSS2/red	DSS2 Red (F+R)
+CDS/P/EGRET/Dif/100-150	EGRET Dif 100-150MeV
+CDS/P/EGRET/Dif/1000-2000	EGRET Dif 1000-2000MeV
+CDS/P/EGRET/Dif/150-300	EGRET Dif 150-300MeV
+CDS/P/EGRET/Dif/2000-4000	EGRET Dif 2000-4000MeV
+CDS/P/EGRET/Dif/30-50	EGRET Dif 30-50MeV
+CDS/P/EGRET/Dif/300-500	EGRET Dif 300-500MeV
+CDS/P/EGRET/Dif/4000-10000	EGRET Dif 4000-10000MeV
+CDS/P/EGRET/Dif/50-70	EGRET Dif 50-70MeV
+CDS/P/EGRET/Dif/500-1000	EGRET Dif 500-1000MeV
+CDS/P/EGRET/Dif/70-100	EGRET Dif 70-100MeV
+CDS/P/EGRET/inf100	EGRET inf 100MeV
+CDS/P/EGRET/sup100	EGRET sup 100MeV
+CDS/P/Fermi/3	Fermi 300-1000MeV HEALPix survey
+CDS/P/Fermi/4	Fermi 1-3GeV HEALPix survey.
+CDS/P/Fermi/5	Fermi 3-300GeV HEALPix survey
+CDS/P/Fermi/color	Fermi Color HEALPix survey
+CDS/P/Finkbeiner	Finkbeiner Halpha composite survey
+CDS/P/GALEXGR6/AIS/FUV	GALEX GR6 AIS (until March 2014)- Far UV
+CDS/P/GALEXGR6/AIS/NUV	GALEX GR6 AIS (until March 2014)- NEAR UV
+CDS/P/GALEXGR6/AIS/color	GALEX GR6 AIS (until March 2014)- Color composition
+CDS/P/GalaxyCounts/2MPZ/0001-001	LIGO (0.001 < z < 0.01, 40 to 80 Mpc)
+CDS/P/GalaxyCounts/2MPZ/001-002	LIGO (0.01 < z < 0.02, 40 to 80 Mpc)
+CDS/P/GalaxyCounts/2MPZ/002-003	LIGO (0.02 < z < 0.03, 40 to 80 Mpc)
+CDS/P/GalaxyCounts/2MPZ/003-004	LIGO (0.03 < z < 0.04, 40 to 80 Mpc)
+CDS/P/GalaxyCounts/2MPZ/004-005	LIGO (0.04 < z < 0.05, 40 to 80 Mpc)
+CDS/P/GalaxyCounts/2MPZ/005-007	LIGO (0.05 < z < 0.07, 40 to 80 Mpc)
+CDS/P/GalaxyCounts/2MPZ/007-01	LIGO (0.07 < z < 0.1, 40 to 80 Mpc)
+CDS/P/HGPS/Flux	HGPS integral flux > 1 TeV
+CDS/P/HGPS/Significance	HGPS significance (Gaussian sigma)
+CDS/P/HI	HI composite survey
+CDS/P/HI4PI/NHI	HI4PI NHI survey (full-sky HI column density distribution)
+CDS/P/HLA/B	HLA-B : F450W, F439W, F438W, F435W
+CDS/P/HLA/CO	HLA-CO : F222M
+CDS/P/HLA/H	HLA-H : F160W
+CDS/P/HLA/H2O	HLA-H2O : F139M
+CDS/P/HLA/Halpha	HLA-Halpha : F656N and F657N
+CDS/P/HLA/Hbeta	HLA-Hbeta : F487N
+CDS/P/HLA/I	HLA-I : F814W, F791W, F785LP and F775W
+CDS/P/HLA/J	HLA-J : F140W, F125W, F125LP and F115LP
+CDS/P/HLA/NII	HLA-NII : F658N
+CDS/P/HLA/OII	HLA-OII : F375N and F373N
+CDS/P/HLA/OIII	HLA-OIII : F502N
+CDS/P/HLA/Palpha	HLA-Palpha : F187N
+CDS/P/HLA/Palpha_c	HLA-Palpha_c : F190N
+CDS/P/HLA/R	HLA-R : F702W and F675W
+CDS/P/HLA/SDSSg	HLA-SDSSg : F475W
+CDS/P/HLA/SDSSr	HLA-SDSSr : F625W and F622W
+CDS/P/HLA/SDSSz	HLA-SDSSz : F850LP
+CDS/P/HLA/SIII	HLA-SIII : F673N, FQ672N and FQ674N
+CDS/P/HLA/U	HLA-U : F336W, F330W, F300W, F275W
+CDS/P/HLA/UV	HLA-UV : F170W
+CDS/P/HLA/V	HLA-V : F555W, F547M, F569W
+CDS/P/HLA/Y	HLA-Y : F110W and F105W
+CDS/P/HLA/wideUV	HLA-wideUV : F255W, F250W, F225W, F220W and F218W
+CDS/P/HLA/wideV	HLA-wideV : F606W and F600LP
+CDS/P/HSC/DR2/deep/g	HSC DR2 deep g
+CDS/P/HSC/DR2/deep/r	HSC DR2 deep r
+CDS/P/HST/B	HST-B includes the following filters: F450W, F439W, F438W, F435W
+CDS/P/HST/CO	HST-CO includes the following filters: F222M
+CDS/P/HST/GOODS/b	GOODS b
+CDS/P/HST/GOODS/color	GOODS color
+CDS/P/HST/GOODS/i	GOODS i
+CDS/P/HST/GOODS/v	GOODS v
+CDS/P/HST/GOODS/z	GOODS z
+CDS/P/HST/H	HST-H includes the following filters: F160W
+CDS/P/HST/H2O	HST-H2O includes the following filters: F139M
+CDS/P/HST/Halpha	HST-Halpha includes the following filters: F656N and F657N
+CDS/P/HST/I	HST-I includes the following filters: F814W, F791W, F785LP and F775W
+CDS/P/HST/J	HST-J includes the following filters: F140W, F125W, F125LP and F115LP
+CDS/P/HST/NII	HST-NII includes the following filters: F658N
+CDS/P/HST/OII	HST-OII includes the following filters: F375N and F373N
+CDS/P/HST/OIII	HST-OIII includes the following filters: F502N
+CDS/P/HST/PHAT/F110W	HST PHAT - F110W - WFC3/IR
+CDS/P/HST/PHAT/F160W	HST PHAT - F160W - WFC3/IR
+CDS/P/HST/PHAT/F275W	HST PHAT - F275W - WFC3/UVIS
+CDS/P/HST/PHAT/F336W	HST PHAT - F336W - WFC3/UVIS
+CDS/P/HST/PHAT/F475W	HST PHAT - F475W - ACS/WFC
+CDS/P/HST/PHAT/F814W	HST PHAT - F814W - ACS/WFC
+CDS/P/HST/Palpha	HST-Palpha includes the following filters: F187N
+CDS/P/HST/Palpha_c	HST-Palpha_c includes the following filters: F190N
+CDS/P/HST/R	HST-R includes the following filters: F702W and F675W
+CDS/P/HST/SDSSg	HST-SDSSg incudes the following filters: F475W
+CDS/P/HST/SDSSr	HST-SDSSr includes the following filters: F625W and F622W
+CDS/P/HST/SDSSz	HST-SDSSz includes the following filters: F850LP
+CDS/P/HST/SIII	HST-SIII includes the following filters: F673N, FQ672N and FQ674N
+CDS/P/HST/U	HST-U includes the following filters: F336W, F330W, F300W and F275W
+CDS/P/HST/UV	HST-UV includes the following filters: F170W
+CDS/P/HST/V	HST-V includes the following filters: F555W, F547M, F569W
+CDS/P/HST/Y	HST-Y includes the following filters: F110W and F105W
+CDS/P/HST/other	HST-Others includes the ALL the other filters not used in other HIPS
+CDS/P/HST/wideUV	HST-wideUV includes the following filters: F255W, F250W, F225W, F220W and F218W
+CDS/P/HST/wideV	HST-wideV includes the following filters: F606W and F600LP
+CDS/P/Haslam408/v2	Haslam 408Mhz reprocessed
+CDS/P/INTGAL/35	Nine Year INTEGRAL IBIS 17-35 keV Galactic Plan
+CDS/P/INTGAL/60	Nine Year INTEGRAL IBIS 17-60 keV Galactic Plan
+CDS/P/INTGAL/80	Nine Year INTEGRAL IBIS 35-80 keV Galactic Plan
+CDS/P/INTGAL/Color	Nine Year INTEGRAL IBIS Galactic Plan Color Composition (35-60-80KeV)
+CDS/P/IPHAS/DR2/halpha	IPHAS DR2 halpha
+CDS/P/IPHAS/DR2/i	IPHAS DR2 i
+CDS/P/IPHAS/DR2/r	IPHAS DR2 r
+CDS/P/IRIS/color	IRAS-IRIS HEALPix survey, color
+CDS/P/ISOPHOT/170	The ISOPHOT 170um Serendipity Survey
+CDS/P/JPSPR1	JPS-PR1 850um
+CDS/P/MAMA/ColorEJ	MAMA color composition (posse,srcj)
+CDS/P/MAMA/posse	MAMA posse
+CDS/P/MAMA/srcj	MAMA srcj
+CDS/P/Mellinger/color	Mellinger color optical survey
+CDS/P/NEOWISER/Color	NEOWISER color  Red (W2) , Blue (W1)
+CDS/P/NEOWISER/W1	NEOWISER W1
+CDS/P/NEOWISER/W2	NEOWISER W2
+CDS/P/NVSS	NVSS - The NRAO VLA Sky Survey (intensity maps)
+CDS/P/PLANCK/R2/CMB	PLANCK Maps of the CMB fluctuations.
+CDS/P/PLANCK/R2/HFI/color	PLANCK R2 HFI color composition 353-545-857 GHz
+CDS/P/PLANCK/R2/HFI100	PLANCK R2 nominal frequency HFI map 100Ghz
+CDS/P/PLANCK/R2/HFI143	PLANCK R2 nominal frequency HFI map 143Ghz
+CDS/P/PLANCK/R2/HFI217	PLANCK R2 nominal frequency HFI map 217Ghz
+CDS/P/PLANCK/R2/HFI353	PLANCK R2 nominal frequency HFI map 353Ghz
+CDS/P/PLANCK/R2/HFI545	PLANCK R2 nominal frequency HFI map 545Ghz
+CDS/P/PLANCK/R2/HFI857	PLANCK R2 nominal frequency HFI map 857Ghz
+CDS/P/PLANCK/R2/LFI/color	PLANCK R2 LFI color composition 30-44-70 GHz
+CDS/P/PLANCK/R2/LFI030	PLANCK R2 nominal frequency LFI map 30 Ghz
+CDS/P/PLANCK/R2/LFI044	PLANCK R2 nominal frequency LFI map 44 Ghz
+CDS/P/PLANCK/R2/LFI070	PLANCK R2 nominal frequency LFI map 70Ghz
+CDS/P/PanSTARRS/DR1/color-z-zg-g	PanSTARRS DR1 color (from bands z and g)
+CDS/P/PanSTARRS/DR1/g	PanSTARRS DR1 g
+CDS/P/PanSTARRS/DR1/i	PanSTARRS DR1 i
+CDS/P/PanSTARRS/DR1/r	PanSTARRS DR1 r
+CDS/P/PanSTARRS/DR1/y	PanSTARRS DR1 y
+CDS/P/PanSTARRS/DR1/z	PanSTARRS DR1 z
+CDS/P/RASS	ROSAT X-Ray All-Sky Survey
+CDS/P/ROSATWFC/F1	ROSAT Wide Field Camera F1 (15-27 PHz)
+CDS/P/ROSATWFC/F2	ROSAT Wide Field Camera F2 (21-50 PHz)
+CDS/P/ROSATWFC/color	ROSAT Wide Field Camera Color composition
+CDS/P/SCUBA/450em	SCUBA 450um emission maps
+CDS/P/SCUBA/850em	SCUBA 850um emission maps
+CDS/P/SCUBA/850emi	SCUBA 850um emission maps - extended dataset
+CDS/P/SCUBA2/450em	SCUBA2 450um
+CDS/P/SCUBA2/850em	SCUBA2 850um
+CDS/P/SDSS9/color	SDSS9 color
+CDS/P/SDSS9/color-alt	SDSS9 color (g, r, i CDS color composition)
+CDS/P/SDSS9/g	SDSS9 band g
+CDS/P/SDSS9/i	SDSS9 band i
+CDS/P/SDSS9/r	SDSS9 band r
+CDS/P/SDSS9/u	SDSS9 band u
+CDS/P/SDSS9/z	SDSS9 band z
+CDS/P/SHASSA/DU	SHASSA DU - Continuum
+CDS/P/SHASSA/FL	SHASSA FL - Continuum subtract.
+CDS/P/SHASSA/H	SHASSA H - H-alpha emission
+CDS/P/SHASSA/SM	SHASSA SM - Continuum subtract.
+CDS/P/SHS	SHS - digitized H-alpha photographic survey
+CDS/P/SPITZER/IRAC1	IRAC1  survey in Healpix
+CDS/P/SPITZER/IRAC2	IRAC2  survey in Healpix
+CDS/P/SPITZER/IRAC3	IRAC3  survey in Healpix
+CDS/P/SPITZER/IRAC4	IRAC4  survey in Healpix
+CDS/P/SPITZER/MIPS1	MIPS1  survey in Healpix
+CDS/P/SPITZER/MIPS2	MIPS2 survey in Healpix
+CDS/P/SPITZER/MIPS3	MIPS3 survey in Healpix
+CDS/P/SPITZER/color	IRAC HEALPix survey, color
+CDS/P/SUMSS	SUMSS (843 MHz)
+CDS/P/Skymapper-color-IRG	Skymapper color (red-I,green-R,blue-G)
+CDS/P/ULTRAVISTA/H	ULTRAVISTA H
+CDS/P/ULTRAVISTA/J	ULTRAVISTA J
+CDS/P/ULTRAVISTA/Ks	ULTRAVISTA Ks
+CDS/P/ULTRAVISTA/NB118	ULTRAVISTA NB118
+CDS/P/ULTRAVISTA/Y	ULTRAVISTA Y
+CDS/P/ULTRAVISTA/color/KsJY	ULTRAVISTA color KsJY
+CDS/P/VISTA/VIKING/H	VISTA VIKING H
+CDS/P/VISTA/VIKING/J	VISTA VIKING J
+CDS/P/VISTA/VIKING/K	VISTA VIKING K
+CDS/P/VISTA/VIKING/Y	VISTA VIKING Y
+CDS/P/VISTA/VIKING/Z	VISTA VIKING Z
+CDS/P/VISTA/VVV/DR4/ColorJYZ	VISTA DR4 ColorJYZ
+CDS/P/VISTA/VVV/DR4/H/Bulge	VISTA VVV DR4 H Bulge
+CDS/P/VISTA/VVV/DR4/H/Disk	VISTA VVV DR4 H Disk
+CDS/P/VISTA/VVV/DR4/J	VISTA VVV DR4 J
+CDS/P/VISTA/VVV/DR4/Y	VISTA VVV DR4 Y
+CDS/P/VISTA/VVV/DR4/Z	VISTA VVV DR4 Z
+CDS/P/VLSSr	VLSSr - 74 MHz continuum
+CDS/P/VTSS/Ha	VTSS Ha
+CDS/P/VTSS/HaCC	VTSS HaCC - Continuum corrected Halpha
+CDS/P/VistaOrion/color	VISTA Orion A color
+CDS/P/WENSS	The Westerbork Northern Sky Survey
+CDS/P/WISE/W1	WISE W1 (3.4um)
+CDS/P/WISE/W2	WISE W2 (4.6um)
+CDS/P/WISE/W3	WISE W3 (12um)
+CDS/P/WISE/W4	WISE W4 (22um)
+CDS/P/WISE/WSSA/12um	Diffuse dust 12um WSSA (Meisner & Finkbeiner 2013)
+CDS/P/WMAP/K/9yr	WMAP K - 9yr
+CDS/P/WMAP/Ka/9yr	WMAP Ka - 9yr
+CDS/P/WMAP/Q/9yr	WMAP Q - 9yr
+CDS/P/WMAP/V/9yr	WMAP V - 9yr
+CDS/P/WMAP/W/9yr	WMAP W - 9yr
+CDS/P/allWISE/W1	AllWISE W1 (3.4um) from raw Atlas Images
+CDS/P/allWISE/W2	AllWISE W2 (4.6um) from raw Atlas Images
+CDS/P/allWISE/W3	AllWISE W3 (12um) from raw Atlas Images
+CDS/P/allWISE/W4	AllWISE W4 (22um) from raw Atlas Images
+CDS/P/allWISE/color	AllWISE color  Red (W4) , Green (W2) , Blue (W1) from raw Atlas Images
+CDS/P/skymapper-G	Skymapper G-band
+CDS/P/skymapper-I	Skymapper I-band
+CDS/P/skymapper-R	Skymapper R-band
+CDS/P/skymapper-U	Skymapper U-band
+CDS/P/skymapper-V	Skymapper V-band
+CDS/P/skymapper-Z	Skymapper Z-band
+CDS/Simbad	SIMBAD Astronomical Database
+CDS/V/139/sdss9	The SDSS Photometric Catalog, Release 9 (Adelman-McCarthy+, 2012) (sdss9)
+CDS/V/147/sdss12	The SDSS Photometric Catalogue, Release 12 (Alam+, 2015) (sdss12)
+CDS/VI/137/gum_mw	GaiaSimu Universe Model Snapshot (Robin+, 2012) (gum_mw)
+CDS/VI/145/attitude	ASC Gaia Attitude Star Catalog (Smart, 2015) (attitude)
+CEFCA/P/j-plus/J-PLUS-DR1	J-PLUS-DR1 (July, 2018)
+CEFCA/P/minijpas/MINIJ-PAS-PDR201912	MINIJ-PAS-PDR201912 (December, 2019)
+China-VO/BASS/DR1	Beijing-Arizona Sky Survey (BASS) DR1 Catalog
+China-VO/BASS/DR2	Beijing-Arizona Sky Survey (BASS) DR2 Catalog
+China-VO/BASS/DR3	Beijing-Arizona Sky Survey (BASS) DR3 Catalog
+China-VO/BASS/DR3/dection_more	Beijing-Arizona Sky Survey (BASS) DR3 detection more Catalog
+China-VO/P/BASS/DR1/image	Beijing-Arizona Sky Survey (BASS) DR1 Image
+China-VO/P/BASS/DR2/image	Beijing-Arizona Sky Survey (BASS) DR2 Image
+China-VO/P/BASS/DR3/image	Beijing-Arizona Sky Survey (BASS) DR3 Image
+ESAVO/P/AKARI/N160	AKARI Far-Infrared All-Sky Survey - Band N160 (160 micron)
+ESAVO/P/AKARI/N60	AKARI Far-Infrared All-Sky Survey - Band N60 (65 micron)
+ESAVO/P/AKARI/WideL	AKARI Far-Infrared All-Sky Survey - Band WideL (140 micron)
+ESAVO/P/AKARI/WideS	AKARI Far-Infrared All-Sky Survey - Band WideS (90 micron)
+ESAVO/P/AKARI/color	AKARI Far-Infrared All-Sky Survey - Color composition (blue: N60; green: WideS; red: WideL)
+ESAVO/P/EXOSAT/all	Images from the EXOSAT Low Energy Telescopes
+ESAVO/P/HERSCHEL/PACS-color	Herschel PACS (color composition)
+ESAVO/P/HERSCHEL/PACS100	Herschel PACS 100 micron
+ESAVO/P/HERSCHEL/PACS100norm	PACS100norm
+ESAVO/P/HERSCHEL/PACS160	Herschel PACS 160 micron
+ESAVO/P/HERSCHEL/PACS160norm	PACS160norm
+ESAVO/P/HERSCHEL/PACS70	Herschel PACS 70 micron
+ESAVO/P/HERSCHEL/PACS70norm	PACS70norm
+ESAVO/P/HERSCHEL/PACS_RGB_norm	PACS_RGB_norm
+ESAVO/P/HERSCHEL/SPIRE-250	SPIRE250
+ESAVO/P/HERSCHEL/SPIRE-350	SPIRE350
+ESAVO/P/HERSCHEL/SPIRE-500	Herschel SPIRE 500 micron
+ESAVO/P/HERSCHEL/SPIRE-color	Herschel SPIRE (color composition)
+ESAVO/P/HERSCHEL/SPIRE250norm	SPIRE250norm
+ESAVO/P/HERSCHEL/SPIRE350norm	SPIRE350norm
+ESAVO/P/HERSCHEL/SPIRE500norm	SPIRE500norm
+ESAVO/P/HST/ACS-blue	HST/ACS - all bands
+ESAVO/P/HST/FOC	HST/FOC - all bands
+ESAVO/P/HST/NICMOS	HST/NICMOS - all bands
+ESAVO/P/HST/WFC3	HST/WFC3 - all bands
+ESAVO/P/HST/WFPC	HST/WFPC - all bands
+ESAVO/P/Haslam408	Haslam 408MHz
+ESAVO/P/Haslam_2014	Haslam_2014
+ESAVO/P/Herschel/color	Herschel RGB color composition
+ESAVO/P/INTEGRAL/20-35kev	INTEGRAL IBIS 20-35 keV
+ESAVO/P/INTEGRAL/35-65kev	INTEGRAL IBIS 35-65 keV
+ESAVO/P/INTEGRAL/65-100kev	INTEGRAL IBIS 65-100 keV
+ESAVO/P/INTEGRAL/color	INTEGRAL IBIS color composition (Blue: 20-35 keV; green: 35-65 keV; reg: 65-100 keV)
+ESAVO/P/ISO/CAM	ISOCAM
+ESAVO/P/PLANCK/HFI-100	Planck HFI 100 GHz
+ESAVO/P/PLANCK/HFI-143	Planck HFI 143 GHz
+ESAVO/P/PLANCK/HFI-143-smooth	Planck HFI 100 GHz smooth
+ESAVO/P/PLANCK/HFI-217	Planck HFI 217 GHz
+ESAVO/P/PLANCK/HFI-545	Planck HFI 545 GHz
+ESAVO/P/PLANCK/HFI-857	Planck HFI 857 GHz
+ESAVO/P/PLANCK/LFI-030	Planck LFI 30 GHz
+ESAVO/P/PLANCK/LFI-044	Planck LFI 44 GHz
+ESAVO/P/PLANCK/LFI-044-smooth	Planck LFI 44 GHz smooth
+ESAVO/P/PLANCK/LFI-070	Planck LFI 70 GHz
+ESAVO/P/PLANCK/LFI-070-smooth	Planck LFI 70 GHz smooth
+ESAVO/P/Planck-2015-Pol-Synchrotron	Planck-2015-Pol-Synchrotron
+ESAVO/P/Spitzer/IRAC1-bright	Spitzer IRAC1 bright
+ESAVO/P/Spitzer/IRAC1-faint	Spitzer IRAC1 faint
+ESAVO/P/Spitzer/IRAC134-RGB-bright	Spitzer IRAC134 RGB bright
+ESAVO/P/Spitzer/IRAC2-bright	Spitzer IRAC2 bright
+ESAVO/P/Spitzer/IRAC2-faint	Spitzer IRAC2 faint
+ESAVO/P/Spitzer/IRAC3-bright	Spitzer IRAC3 bright
+ESAVO/P/Spitzer/IRAC3-faint	Spitzer IRAC3 faint
+ESAVO/P/Spitzer/IRAC4-bright	Spitzer IRAC4 bright
+ESAVO/P/Spitzer/IRAC4-faint	Spitzer IRAC4 faint
+ESAVO/P/XMM/EPIC-RGB	XMM-Newton EPIC camera RGB composition
+IPAC/P/GLIMPSE360	GLIMPSE360: Spitzer's Infrared Milky Way
+JAXA/P/AKARI/IRC/Image/Pointed/POI	AKARI IRC RGB
+JAXA/P/BICE/Image	ID1490928593
+JAXA/P/ASCA/GIS/Image	ASCA public data image (256x256)
+JAXA/P/ASCA/SIS/Image	ASCA public data image (SIS)
+JAXA/P/CONSTELLATIONS/Image/Drawing/Color	CONSTELLATIONS3
+JAXA/P/CONSTELLATIONS/Image/Drawing/Monochrome	CONSTELLATIONS1
+JAXA/P/CONSTELLATIONS/Image/Lines	CONSTELLATIONS5
+JAXA/P/CONSTELLATIONS/Image/Painting/Color	CONSTELLATIONS4
+JAXA/P/CONSTELLATIONS/Image/Painting/KAGAYA	CONSTELLATIONS6
+JAXA/P/CONSTELLATIONS/Image/Painting/Monochrome	CONSTELLATIONS2
+JAXA/P/HITOMI/HXI/Image	Hitomi HXI public data image
+JAXA/P/HITOMI/SXI/Image	Hitomi SXI public data image
+JAXA/P/HITOMI/SXS/Image	Hitomi SXS public data image
+JAXA/P/SUZAKU/XIS/Image	Suzaku public data image
+JAXA/P/SWIFT/BAT/Image	Swift-BAT 70-month all-sray hard X-ray survey image
+JAXA/SWIFT/BAT/Catalogue	Swift BAT progressive catalog
+JAXA/SWIFT/XRT/Catalogue	Swift XRT progressive catalog
+Leiden/TGSSADR/7sigma	The TIFR GMRT Sky Survey, Alternative Data Release
+NOAO/P/DES/DR1/LIneA-color	DES DR1 LIneA color
+cxc.harvard.edu/P/cda/hips/allsky/rgb	CXC HiPS (Chandra)
+nasa.heasarc/P/Swift/UVOT/cnt_B	Combined Swift UVOT counts: band B
+nasa.heasarc/P/Swift/UVOT/cnt_U	Combined Swift UVOT counts: band U
+nasa.heasarc/P/Swift/UVOT/cnt_UVM2	Combined Swift UVOT counts: band UVM2
+nasa.heasarc/P/Swift/UVOT/cnt_UVW1	Combined Swift UVOT counts: band UVW1
+nasa.heasarc/P/Swift/UVOT/cnt_UVW2	Combined Swift UVOT counts: band UVW2
+nasa.heasarc/P/Swift/UVOT/cnt_V	Combined Swift UVOT counts: band V
+nasa.heasarc/P/Swift/UVOT/cnt_WHITE	Combined Swift UVOT counts: band WHITE
+nasa.heasarc/P/Swift/UVOT/exp_B	Combined Swift UVOT exposure: band B
+nasa.heasarc/P/Swift/UVOT/exp_U	Combined Swift UVOT exposure: band U
+nasa.heasarc/P/Swift/UVOT/exp_UVM2	Combined Swift UVOT exposure: band UVM2
+nasa.heasarc/P/Swift/UVOT/exp_UVW1	Combined Swift UVOT exposure: band UVW1
+nasa.heasarc/P/Swift/UVOT/exp_UVW2	Combined Swift UVOT exposure: band UVW2
+nasa.heasarc/P/Swift/UVOT/exp_V	Combined Swift UVOT exposure: band V
+nasa.heasarc/P/Swift/UVOT/exp_WHITE	Combined Swift UVOT exposure: band WHITE
+nasa.heasarc/P/Swift/UVOT/int_B	Combined Swift UVOT intensities: band B
+nasa.heasarc/P/Swift/UVOT/int_UVM2	Combined Swift UVOT intensities: band UVM2
+nasa.heasarc/P/Swift/UVOT/int_UVW1	Combined Swift UVOT intensities: band UVW1
+nasa.heasarc/P/Swift/UVOT/int_UVW2	Combined Swift UVOT intensities: band UVW2
+nasa.heasarc/P/Swift/UVOT/int_U_UVW1_UVW2	Combined Swift UVOT intensities: color bands U-UVW1-UVW2
+nasa.heasarc/P/Swift/UVOT/int_V	Combined Swift UVOT intensities: band V
+nasa.heasarc/P/Swift/UVOT/int_WHITE	Combined Swift UVOT intensities: band WHITE
+nasa.heasarc/P/Swift/XRT/exp	Combined Swift XRT exposure
+ov-gso/P/AKARI/160	AKARI 160um
+ov-gso/P/AKARI/160/SIGMA	AKARI 160um SIGMA
+ov-gso/P/AKARI/65	AKARI 65um
+ov-gso/P/AKARI/65/SIGMA	AKARI 65um SIGMA
+ov-gso/P/AKARI/WideL	AKARI 140um
+ov-gso/P/AKARI/WideL/SIGMA	AKARI 140um SIGMA
+ov-gso/P/AKARI/WideS	AKARI 90um
+ov-gso/P/AKARI/WideS/SIGMA	AKARI 90um SIGMA
+ov-gso/P/AMIGPS	AMIGPS
+ov-gso/P/AMIGPS/SIGMA	AMIGPS SIGMA
+ov-gso/P/Abell1763/irac1	Abell 1763 IRAC1
+ov-gso/P/Abell1763/irac2	Abell 1763 IRAC2
+ov-gso/P/Abell1763/irac3	Abell 1763 IRAC3
+ov-gso/P/Abell1763/irac4	Abell 1763 IRAC4
+ov-gso/P/Abell1763/mips1	Abell 1763 MIPS1
+ov-gso/P/Abell1763/mips2	Abell 1763 MIPS2
+ov-gso/P/Abell1763/mips3	Abell 1763 MIPS3
+ov-gso/P/BAT/100-150keV	Swift/BAT 100-150keV
+ov-gso/P/BAT/14-20keV	Swift/BAT 14-20keV
+ov-gso/P/BAT/150-195keV	Swift/BAT 150-195keV
+ov-gso/P/BAT/20-24keV	Swift/BAT 20-24keV
+ov-gso/P/BAT/24-35keV	Swift/BAT 24-35keV
+ov-gso/P/BAT/35-50keV	Swift/BAT 35-50keV
+ov-gso/P/BAT/50-75keV	Swift/BAT 50-75keV
+ov-gso/P/BAT/75-100keV	Swift/BAT 75-100keV
+ov-gso/P/BLAST/250	BLAST 250um
+ov-gso/P/BLAST/250/SIGMA	BLAST 250um SIGMA
+ov-gso/P/BLAST/350	BLAST 350um
+ov-gso/P/BLAST/350/SIGMA	BLAST 350um SIGMA
+ov-gso/P/BLAST/500	BLAST_500um
+ov-gso/P/BLAST/500/SIGMA	BLAST 500um SIGMA
+ov-gso/P/BOLOCAM	Bolocam Galactic Plane Survey (BGPS)
+ov-gso/P/BOLOCAM/v2/SIGMA	BOLOCAM v2.0 SIGMA
+ov-gso/P/BOLOCAM/v2p1/SIGMA	BOLOCAM v2.1 SIGMA
+ov-gso/P/C2D/irac1	C2D IRAC1
+ov-gso/P/C2D/irac2	C2D IRAC2
+ov-gso/P/C2D/irac3	C2D IRAC3
+ov-gso/P/C2D/irac4	C2D IRAC4
+ov-gso/P/C2D/mips1	C2D MIPS1
+ov-gso/P/C2D/mips2	C2D MIPS2
+ov-gso/P/C2D/mips3	C2D MIPS3
+ov-gso/P/CC/250	Galactic Cold Cores 250 micron
+ov-gso/P/CC/250/SIGMA	Galactic Cold Cores 250 micron SIGMA
+ov-gso/P/CC/350	Galactic Cold Cores 350 micron
+ov-gso/P/CC/350/SIGMA	Galactic Cold Cores 350 micron SIGMA
+ov-gso/P/CC/500	Galactic Cold Cores 500 micron
+ov-gso/P/CC/500/SIGMA	Galactic Cold Cores 500 micron SIGMA
+ov-gso/P/CGPS/CONT	CGPS_CONT_1_8192_partial.fits
+ov-gso/P/CGPS/II	CGPS_II_1_8192_partial.fits
+ov-gso/P/CGPS/VGPS	Combination of the Canadian Galactic Plane Survey (CGPS) and the VLA Galactic Plane Survey (VGPS)
+ov-gso/P/CGPS/VGPS/CONT	Combination of the 1420 MHz continuum of the Canadian Galactic Plane Survey (CGPS) with the VLA Galactic Plane Survey (VGPS)
+ov-gso/P/CHIPASS	CHIPASS 1.4 GHz Radio Continuum
+ov-gso/P/CLASH/irac1	CLASH IRAC1
+ov-gso/P/CLASH/irac2	CLASH IRAC2
+ov-gso/P/CLASH/irac3	CLASH IRAC3
+ov-gso/P/CLASH/irac4	CLASH IRAC4
+ov-gso/P/COMPTEL	COMPTEL 0.8-30 MeV
+ov-gso/P/Cygnus/irac1	Cygnus IRAC1
+ov-gso/P/Cygnus/irac2	Cygnus IRAC2
+ov-gso/P/Cygnus/irac3	Cygnus IRAC3
+ov-gso/P/Cygnus/irac4	Cygnus IRAC4
+ov-gso/P/Cygnus/mips1	Cygnus MIPS1
+ov-gso/P/DEBRIS/250	DEBRIS 250 microns
+ov-gso/P/DEBRIS/250/SIGMA	DEBRIS 250 microns SIGMA
+ov-gso/P/DEBRIS/350	DEBRIS 350 microns
+ov-gso/P/DEBRIS/350/SIGMA	DEBRIS 350 microns SIGMA
+ov-gso/P/DEBRIS/500	DEBRIS 500 microns
+ov-gso/P/DEBRIS/500/SIGMA	DEBRIS 500 microns SIGMA
+ov-gso/P/DIRBE/1	DIRBE BAND 1 - 1.25 mic
+ov-gso/P/DIRBE/1/SIGMA	DIRBE SIGMA Band 1 ? 1.25 um
+ov-gso/P/DIRBE/10	DIRBE BAND 10 - 240 mic
+ov-gso/P/DIRBE/10/SIGMA	DIRBE SIGMA Band 10 ? 240 um
+ov-gso/P/DIRBE/2	DIRBE BAND 2 - 2.2 mic
+ov-gso/P/DIRBE/2/SIGMA	DIRBE SIGMA Band 2 ? 2.2 um
+ov-gso/P/DIRBE/3	DIRBE BAND 3 - 3.5 mic
+ov-gso/P/DIRBE/3/SIGMA	DIRBE SIGMA Band 3 ? 3.5 um
+ov-gso/P/DIRBE/4	DIRBE BAND 4 - 4.9 mic
+ov-gso/P/DIRBE/4/SIGMA	DIRBE SIGMA Band 4 ? 4.9 um
+ov-gso/P/DIRBE/5	DIRBE BAND 5 - 12 mic
+ov-gso/P/DIRBE/5/SIGMA	DIRBE SIGMA Band 5 ? 12 um
+ov-gso/P/DIRBE/6	DIRBE BAND 6 - 25 mic
+ov-gso/P/DIRBE/6/SIGMA	DIRBE SIGMA Band 6 ? 25 um
+ov-gso/P/DIRBE/7	DIRBE BAND 7 - 60 mic
+ov-gso/P/DIRBE/7/SIGMA	DIRBE SIGMA Band 7 ? 60 um
+ov-gso/P/DIRBE/8	DIRBE BAND 8 - 100 mic
+ov-gso/P/DIRBE/8/SIGMA	DIRBE SIGMA Band 8 ? 100 um
+ov-gso/P/DIRBE/9	DIRBE BAND 9 - 140 mic
+ov-gso/P/DIRBE/9/SIGMA	DIRBE SIGMA Band 9 ? 140 um
+ov-gso/P/DIRBE/ZSMA1	DIRBE ZSMA BAND 1 - 1.25 mic
+ov-gso/P/DIRBE/ZSMA10	DIRBE ZSMA BAND 10 - 240 mic
+ov-gso/P/DIRBE/ZSMA2	DIRBE ZSMA BAND 2 - 2.2 mic
+ov-gso/P/DIRBE/ZSMA3	DIRBE ZSMA BAND 3 - 3.5 mic
+ov-gso/P/DIRBE/ZSMA4	DIRBE ZSMA BAND 4 - 4.9 mic
+ov-gso/P/DIRBE/ZSMA5	DIRBE ZSMA BAND 5 - 12 mic
+ov-gso/P/DIRBE/ZSMA6	DIRBE ZSMA BAND 6 - 25 mic
+ov-gso/P/DIRBE/ZSMA7	DIRBE ZSMA BAND 7 - 60 mic
+ov-gso/P/DIRBE/ZSMA8	DIRBE ZSMA BAND 8 - 100 mic
+ov-gso/P/DIRBE/ZSMA9	DIRBE ZSMA BAND 9 - 140 mic
+ov-gso/P/DRAO-VillaElisa/21cm/POLQ	DRAO-VillaElisa 21cm POLQ
+ov-gso/P/DRAO/22MHz	DRAO 22 MHz
+ov-gso/P/DUSTiNGS/irac1	DUSTiNGS IRAC1
+ov-gso/P/DUSTiNGS/irac2	DUSTiNGS IRAC2
+ov-gso/P/DWINGELOO/820MHz	Dwingeloo 820MHz
+ov-gso/P/Dunes/250	DUNES 250 microns
+ov-gso/P/Dunes/250/SIGMA	DUNES 250 microns SIGMA
+ov-gso/P/Dunes/350	DUNES 350 microns
+ov-gso/P/Dunes/350/SIGMA	DUNES 350 microns SIGMA
+ov-gso/P/Dunes/500	DUNES 500 microns
+ov-gso/P/Dunes/500/SIGMA	DUNES 500 microns SIGMA
+ov-gso/P/EBHIS	EBHIS 21cm
+ov-gso/P/EFFELSBERG+EMLS/21cm/	EFFELSBERG+EMLS 21cm
+ov-gso/P/EFFELSBERG/11cm	Effelsberg 11cm
+ov-gso/P/EFFELSBERG/11cm/POLQ	Effelsberg 11cm POLQ
+ov-gso/P/EFFELSBERG/11cm/POLU	Effelsberg 11cm POLU
+ov-gso/P/EFFELSBERG/11cm/back	Effelsberg 11cm background
+ov-gso/P/EFFELSBERG/21cm	Effelsberg 21cm
+ov-gso/P/EFFELSBERG/21cm/POLQ	Effelsberg 21cm POLQ
+ov-gso/P/EFFELSBERG/21cm/POLU	Effelsberg 21cm POLU
+ov-gso/P/EFFELSBERG/21cm/back	Effelsberg 21cm background
+ov-gso/P/ELFLock/mips3	ELFLock MIPS3
+ov-gso/P/EPoS/250	EPoS 250 microns
+ov-gso/P/EPoS/250/SIGMA	EPoS 250 microns SIGMA
+ov-gso/P/EPoS/350	EPoS 350 microns
+ov-gso/P/EPoS/350/SIGMA	EPoS 350 microns SIGMA
+ov-gso/P/EPoS/500	EPoS 500 microns
+ov-gso/P/EPoS/500/SIGMA	EPoS 500 microns SIGMA
+ov-gso/P/FIDEL/mips1	FIDEL MIPS1
+ov-gso/P/FIDEL/mips2	FIDEL MIPS2
+ov-gso/P/FIDEL/mips3	FIDEL MIPS3
+ov-gso/P/FLS/irac1	FLS IRAC1
+ov-gso/P/FLS/irac2	FLS IRAC2
+ov-gso/P/FLS/irac3	FLS IRAC3
+ov-gso/P/FLS/irac4	FLS IRAC4
+ov-gso/P/FLS/mips1	FLS MIPS1
+ov-gso/P/FLS/mips2	FLS MIPS2
+ov-gso/P/FLS/mips3	FLS MIPS3
+ov-gso/P/Fermi/Band1	Fermi-LAT 30-100 MeV
+ov-gso/P/Fermi/Band2	Fermi-LAT 100-300 MeV
+ov-gso/P/Fermi/Band3	Fermi-LAT 300-1000 MeV
+ov-gso/P/Fermi/Band4	Fermi-LAT 1-3 GeV
+ov-gso/P/Fermi/Band5	Fermi-LAT 3-300 GeV
+ov-gso/P/Frontier/Fields/irac1	Frontier Fields IRAC1
+ov-gso/P/Frontier/Fields/irac2	Frontier Fields IRAC2
+ov-gso/P/Frontier/Fields/irac3	Frontier Fields IRAC3
+ov-gso/P/Frontier/Fields/irac4	Frontier Fields IRAC4
+ov-gso/P/Frontier/Fields/mips1	Frontier Fields MIPS1
+ov-gso/P/GASS	Parkes Galactic All Sky Survey (GASS)
+ov-gso/P/GAURIBIDANUR	Gauribidanur 35 MHz
+ov-gso/P/GLEAM/072-103	GLEAM 072-103
+ov-gso/P/GLEAM/103-134	GLEAM 103-134
+ov-gso/P/GLEAM/170-231	GLEAM 170-231
+ov-gso/P/GLIMPSE/irac1	GLIMPSE IRAC1
+ov-gso/P/GLIMPSE/irac2	GLIMPSE IRAC2
+ov-gso/P/GLIMPSE/irac3	GLIMPSE IRAC3
+ov-gso/P/GLIMPSE/irac4	GLIMPSE IRAC4
+ov-gso/P/GOALS/irac1	GOALS IRAC1
+ov-gso/P/GOALS/irac2	GOALS IRAC2
+ov-gso/P/GOALS/irac3	GOALS IRAC3
+ov-gso/P/GOALS/irac4	GOALS IRAC4
+ov-gso/P/GOALS/mips1	GOALS MIPS1
+ov-gso/P/GOALS/mips2	GOALS MIPS2
+ov-gso/P/GOALS/mips3	GOALS MIPS3
+ov-gso/P/GOODS/250	GOODS 250 microns
+ov-gso/P/GOODS/250/SIGMA	GOODS 250 microns SIGMA
+ov-gso/P/GOODS/350	GOODS 350 microns
+ov-gso/P/GOODS/350/SIGMA	GOODS 350 microns SIGMA
+ov-gso/P/GOODS/500	GOODS 500 microns
+ov-gso/P/GOODS/500/SIGMA	GOODS 500 microns SIGMA
+ov-gso/P/Gould/Belt/250	Gould Belt 250 microns
+ov-gso/P/Gould/Belt/350	Gould Belt 350 microns
+ov-gso/P/Gould/Belt/500	Gould Belt 500 microns
+ov-gso/P/Gould/belt/250/SIGMA	Gould Belt 250 microns SIGMA
+ov-gso/P/Gould/belt/350/SIGMA	Gould Belt 350 microns SIGMA
+ov-gso/P/Gould/belt/500/SIGMA	Gould Belt 500 microns SIGMA
+ov-gso/P/HI4PI	HI4PI survey (GASS+EBHIS)
+ov-gso/P/HIPASS-ZOA/TLdv	HIPASS-ZOA RRL
+ov-gso/P/HLS/250	HLS 250 microns
+ov-gso/P/HLS/250/SIGMA	HLS 250 microns SIGMA
+ov-gso/P/HLS/350	HLS 350 microns
+ov-gso/P/HLS/350/SIGMA	HLS 350 microns SIGMA
+ov-gso/P/HLS/500	HLS 500 microns
+ov-gso/P/HLS/500/SIGMA	HLS 500 microns SIGMA
+ov-gso/P/Hatlas/250	H-atlas 250 microns
+ov-gso/P/Hatlas/250/SIGMA	H-atlas 250 microns SIGMA
+ov-gso/P/Hatlas/350	H-atlas 350 microns
+ov-gso/P/Hatlas/350/SIGMA	H-atlas 350 microns SIGMA
+ov-gso/P/Hatlas/500	H-atlas 500 microns
+ov-gso/P/Hatlas/500/SIGMA	H-atlas 500 microns SIGMA
+ov-gso/P/HeViCS/250	HeViCS 250 microns
+ov-gso/P/HeViCS/250/SIGMA	HeViCS 250 microns SIGMA
+ov-gso/P/HeViCS/350	HeViCS 350 microns
+ov-gso/P/HeViCS/350/SIGMA	HeViCS 350 microns SIGMA
+ov-gso/P/HeViCS/500	HeViCS 500 microns
+ov-gso/P/HeViCS/500/SIGMA	HeViCS 500 microns SIGMA
+ov-gso/P/Helga/250	Helga 250 microns
+ov-gso/P/Helga/250/SIGMA	Helga 250 microns SIGMA
+ov-gso/P/Helga/350	Helga 350 microns
+ov-gso/P/Helga/350/SIGMA	Helga 350 microns SIGMA
+ov-gso/P/Helga/500	Helga 500 microns
+ov-gso/P/Helga/500/SIGMA	Helga 500 microns SIGMA
+ov-gso/P/HerM33es/250	HerM33es 250 microns
+ov-gso/P/HerM33es/250/SIGMA	HerM33es 250 microns SIGMA
+ov-gso/P/HerM33es/350	HerM33es 350 microns
+ov-gso/P/HerM33es/350/SIGMA	HerM33es 350 microns SIGMA
+ov-gso/P/HerM33es/500	HerM33es 500 microns
+ov-gso/P/HerM33es/500/SIGMA	HerM33es 500 microns SIGMA
+ov-gso/P/Heritage/250	Heritage 250 microns
+ov-gso/P/Heritage/250/SIGMA	Heritage 250 microns SIGMA
+ov-gso/P/Heritage/350	Heritage 350 microns
+ov-gso/P/Heritage/350/SIGMA	Heritage 350 microns SIGMA
+ov-gso/P/Heritage/500	Heritage 500 microns
+ov-gso/P/Heritage/500/SIGMA	Heritage 500 microns SIGMA
+ov-gso/P/Hermes/250	HerMES 250 microns
+ov-gso/P/Hermes/250/SIGMA	HerMES 250 microns SIGMA
+ov-gso/P/Hermes/350	HerMES 350 microns
+ov-gso/P/Hermes/350/SIGMA	HerMES 350 microns SIGMA
+ov-gso/P/Hermes/500	HerMES 500 microns
+ov-gso/P/Hermes/500/SIGMA	HerMES 500 microns SIGMA
+ov-gso/P/Higal/250	Hi-GAL 250 microns
+ov-gso/P/Higal/250/SIGMA	Hi-GAL 250 microns SIGMA
+ov-gso/P/Higal/350	Hi-GAL 350 microns
+ov-gso/P/Higal/350/SIGMA	Hi-GAL 350 microns SIGMA
+ov-gso/P/Higal/500	Hi-GAL 500 microns
+ov-gso/P/Higal/500/SIGMA	Hi-GAL 500 microns SIGMA
+ov-gso/P/Hobys/250	Hobys 250 microns
+ov-gso/P/Hobys/250/SIGMA	Hobys 250 microns SIGMA
+ov-gso/P/Hobys/350	Hobys 350 microns
+ov-gso/P/Hobys/350/SIGMA	Hobys 350 microns SIGMA
+ov-gso/P/Hobys/500	Hobys 500 microns
+ov-gso/P/Hobys/500/SIGMA	Hobys 500 microns SIGMA
+ov-gso/P/INTEGRAL/14y/17-60keV	INTEGRAL/IBIS 14-year 17-60keV
+ov-gso/P/INTEGRAL/17-35keV	INTEGRAL/IBIS 9-year 17-35keV
+ov-gso/P/INTEGRAL/17-60keV	INTEGRAL/IBIS 9-year 17-60keV
+ov-gso/P/INTEGRAL/35-80keV	INTEGRAL/IBIS 9-year 35-80keV
+ov-gso/P/IRIS/1	IRAS-IRIS BAND 1 - 12um
+ov-gso/P/IRIS/1/SIGMA	IRAS-IRIS SIGMA BAND 1 ? 12 mic
+ov-gso/P/IRIS/2	IRAS-IRIS BAND 2 - 25um
+ov-gso/P/IRIS/2/SIGMA	IRAS-IRIS SIGMA BAND 2 ? 25 mic
+ov-gso/P/IRIS/3	IRAS-IRIS BAND 3 - 60um
+ov-gso/P/IRIS/3/SIGMA	IRAS-IRIS SIGMA BAND 3 ? 60 mic
+ov-gso/P/IRIS/4	IRAS-IRIS BAND 4 - 100um
+ov-gso/P/IRIS/4/SIGMA	IRAS-IRIS SIGMA BAND 4 ? 100 mic
+ov-gso/P/IRTS/250	IRTS 250um
+ov-gso/P/IRTS/400	IRTS 400um
+ov-gso/P/IRTS/700	IRTS 700um
+ov-gso/P/Kingfish/250	Kingfish 250 microns
+ov-gso/P/Kingfish/250/SIGMA	Kingfish 250 microns SIGMA
+ov-gso/P/Kingfish/350	Kingfish 350 microns
+ov-gso/P/Kingfish/350/SIGMA	Kingfish 350 microns SIGMA
+ov-gso/P/Kingfish/500	Kingfish 500 microns
+ov-gso/P/Kingfish/500/SIGMA	Kingfish 500 microns SIGMA
+ov-gso/P/LAB	Leiden/Argentine/Bonn (LAB) Galactic HI survey
+ov-gso/P/LG/mips1	Local Galaxies MIPS1
+ov-gso/P/LG/mips2	Local Galaxies MIPS2
+ov-gso/P/LG/mips3	Local Galaxies MIPS3
+ov-gso/P/LVL/irac1	LVL IRAC1
+ov-gso/P/LVL/irac2	LVL IRAC2
+ov-gso/P/LVL/irac3	LVL IRAC3
+ov-gso/P/LVL/irac4	LVL IRAC4
+ov-gso/P/LVL/mips1	LVL MIPS1
+ov-gso/P/LVL/mips2	LVL MIPS2
+ov-gso/P/LVL/mips3	LVL MIPS3
+ov-gso/P/M31/irac1	M31 IRAC1
+ov-gso/P/M31/irac2	M31 IRAC2
+ov-gso/P/MAIPU-MU	MAIPU-MU 45 MHz
+ov-gso/P/MIPSGAL/mips1	MIPSGAL MIPS1
+ov-gso/P/MITEoR	MITEoR 150 MHz
+ov-gso/P/MITEoR/SIGMA	MITEoR SIGMA 150 MHz
+ov-gso/P/Madden/250	Madden?s Program 250 microns
+ov-gso/P/Madden/250/SIGMA	Madden?s Program 250 microns SIGMA
+ov-gso/P/Madden/350	Madden?s Program 350 microns
+ov-gso/P/Madden/350/SIGMA	Madden?s Program 350 microns SIGMA
+ov-gso/P/Madden/500	Madden?s Program 500 microns
+ov-gso/P/Madden/500/SIGMA	Madden?s Program 500 microns SIGMA
+ov-gso/P/Meisenheimer/250	Meisenheimer?s Program 250 microns
+ov-gso/P/Meisenheimer/250/SIGMA	Meisenheimer?s Program 250 microns SIGMA
+ov-gso/P/Meisenheimer/350	Meisenheimer?s Program 350 microns
+ov-gso/P/Meisenheimer/350/SIGMA	Meisenheimer?s Program 350 microns SIGMA
+ov-gso/P/Meisenheimer/500	Meisenheimer?s Program 500 microns
+ov-gso/P/Meisenheimer/500/SIGMA	Meisenheimer?s Program 500 microns SIGMA
+ov-gso/P/Nobeyama/3cm	Nobeyama 10 GHz
+ov-gso/P/PARKES/150MHz	Parkes 150 MHz
+ov-gso/P/PARKES/6cm	Parkes 6cm
+ov-gso/P/PARKES/85MHz	Parkes 85 MHz
+ov-gso/P/PILOT/240/I	PILOT 240 microns Intensity
+ov-gso/P/PILOT/240/Q	PILOT 240 microns STOCKES Q
+ov-gso/P/PILOT/240/U	PILOT 240 microns STOCKES U
+ov-gso/P/RASS	ROSAT All Sky Survey (RASS) - 0.1-2.4 keV
+ov-gso/P/RASS/EXP	ROSAT All Sky Survey (RASS) exposure time
+ov-gso/P/RASS/HardBand	ROSAT All Sky Survey (RASS) - 0.5-2.4 keV
+ov-gso/P/RASS/SoftBand	ROSAT All Sky Survey (RASS) - 0.1-0.4 keV
+ov-gso/P/S4G/irac1	S4G IRAC1
+ov-gso/P/S4G/irac2	S4G IRAC2
+ov-gso/P/SAG4/250	SAG-4 250 micron
+ov-gso/P/SAG4/250/SIGMA	SAG-4 250 micron SIGMA
+ov-gso/P/SAG4/350	SAG-4 350 micron
+ov-gso/P/SAG4/350/SIGMA	SAG-4 350 micron SIGMA
+ov-gso/P/SAG4/500	SAG-4 500 micron
+ov-gso/P/SAG4/500/SIGMA	SAG-4 500 micron SIGMA
+ov-gso/P/SAGE/irac1	SAGE IRAC1
+ov-gso/P/SAGE/irac3	SAGE IRAC3
+ov-gso/P/SAGE/irac4	SAGE IRAC4
+ov-gso/P/SAGE/mips1	SAGE MIPS1
+ov-gso/P/SAGE/mips2	SAGE MIPS2
+ov-gso/P/SAGE/mips3	SAGE MIPS3
+ov-gso/P/SAGE_irac2	SAGE IRAC2
+ov-gso/P/SCANDELS/irac1	S-CANDELS IRAC1
+ov-gso/P/SCANDELS/irac2	S-CANDELS IRAC2
+ov-gso/P/SCOSMOS/irac1	S-COSMOS IRAC1
+ov-gso/P/SCOSMOS/irac2	S-COSMOS IRAC2
+ov-gso/P/SCOSMOS/irac3	S-COSMOS IRAC3
+ov-gso/P/SCOSMOS/mips1	S-COSMOS MIPS1
+ov-gso/P/SCOSMOS/mips2	S-COSMOS MIPS2
+ov-gso/P/SCOSMOS/mips3	S-COSMOS MIPS3
+ov-gso/P/SDWFS/irac1	SDWFS IRAC1
+ov-gso/P/SDWFS/irac2	SDWFS IRAC2
+ov-gso/P/SDWFS/irac3	SDWFS IRAC3
+ov-gso/P/SDWFS/irac4	SDWFS IRAC4
+ov-gso/P/SEP/mips1	SEP MIPS1
+ov-gso/P/SEP/mips2	SEP MIPS2
+ov-gso/P/SERVS/irac1	SERVS IRAC1
+ov-gso/P/SERVS/irac2	SERVS IRAC2
+ov-gso/P/SGPS/CONT	21-cm continuum - Southern Galactic Plane Survey (SGPS)
+ov-gso/P/SGPS/II	Southern Galactic Plane Survey (SGPS)
+ov-gso/P/SHASSA	SHASSA Continuum Subtracted
+ov-gso/P/SHASSA/CONT	SHASSA Continuum
+ov-gso/P/SHASSA/HA	SHASSA H-alpha
+ov-gso/P/SHASSA/SM	SHASSA SM
+ov-gso/P/SINGS/irac1	SINGS IRAC1
+ov-gso/P/SINGS/irac2	SINGS IRAC2
+ov-gso/P/SINGS/irac3	SINGS IRAC3
+ov-gso/P/SINGS/irac4	SINGS IRAC4
+ov-gso/P/SINGS/mips1	SINGS MIPS1
+ov-gso/P/SINGS/mips2	SINGS MIPS2
+ov-gso/P/SINGS/mips3	SINGS MIPS3
+ov-gso/P/SMOG/irac1	SMOG IRAC1
+ov-gso/P/SMOG/irac2	SMOG IRAC2
+ov-gso/P/SMOG/irac3	SMOG IRAC3
+ov-gso/P/SMOG/irac4	SMOG IRAC4
+ov-gso/P/SMUVS/irac1	SMUVS IRAC1
+ov-gso/P/SMUVS/irac2	SMUVS IRAC2
+ov-gso/P/SRELICS/irac1	SRELICS IRAC1
+ov-gso/P/SRELICS/irac2	SRELICS IRAC2
+ov-gso/P/STOCKERT+VILLAELISA/1420MHz	Stockert + Villa Elisa 1420 MHz
+ov-gso/P/STOCKERT/11cm	Stockert 11cm
+ov-gso/P/SUMSS	The Survey University Molonglo Sky Survey (SUMSS)
+ov-gso/P/SWIRE/irac1	SWIRE IRAC1
+ov-gso/P/SWIRE/irac2	SWIRE IRAC2
+ov-gso/P/SWIRE/irac3	SWIRE IRAC3
+ov-gso/P/SWIRE/irac4	SWIRE IRAC4
+ov-gso/P/SWIRE/mips2	SWIRE MIPS2
+ov-gso/P/SWIRE/mips3	SWIRE MIPS3
+ov-gso/P/SpIES/irac1	SpIES IRAC1
+ov-gso/P/SpIES/irac2	SpIES IRAC2
+ov-gso/P/SpUDS/irac1	SpUDS IRAC1
+ov-gso/P/SpUDS/irac2	SpUDS IRAC2
+ov-gso/P/SpUDS/irac3	SpUDS IRAC3
+ov-gso/P/SpUDS/irac4	SpUDS IRAC4
+ov-gso/P/SpUDS/mips1	SpUDS MIPS1
+ov-gso/P/Taurus/irac1	Taurus IRAC1
+ov-gso/P/Taurus/irac2	Taurus IRAC2
+ov-gso/P/Taurus/irac3	Taurus IRAC3
+ov-gso/P/Taurus/irac4	Taurus IRAC4
+ov-gso/P/Taurus/mips1	Taurus MIPS1
+ov-gso/P/Taurus/mips2	Taurus MIPS2
+ov-gso/P/Taurus/mips3	Taurus MIPS3
+ov-gso/P/URUMQI	URUMQI
+ov-gso/P/URUMQI/POLQ	URUMQI POLQ
+ov-gso/P/URUMQI/POLU	URUMQI POLU
+ov-gso/P/VELACAR/irac2	Vela-Carina IRAC2
+ov-gso/P/VELACAR/irac3	Vela-Carina IRAC3
+ov-gso/P/VELACAR/irac4	Vela-Carina IRAC4
+ov-gso/P/VELACAR_irac1	Vela-Carina IRAC1
+ov-gso/P/VGPS/CONT	VGPS_CONT_1_8192_partial.fits
+ov-gso/P/VNGS/250	VNGS 250 microns
+ov-gso/P/VNGS/250/SIGMA	VNGS 250 microns SIGMA
+ov-gso/P/VNGS/350	VNGS 350 microns
+ov-gso/P/VNGS/350/SIGMA	VNGS 350 microns SIGMA
+ov-gso/P/VNGS/500	VNGS 500 microns
+ov-gso/P/VNGS/500/SIGMA	VNGS 500 microns SIGMA
+ov-gso/P/VTSS/CONT	Virginia Tech Spectral-Line Survey (VTSS) - Continuum corrected Halpha image
+ov-gso/P/VTSS/Ha	Virginia Tech Spectral-Line Survey (VTSS) - Halpha image
+ov-gso/P/WHAM	WHAM Halpha
+svo.cab/GTC	GTC Public Archive
+wfau.roe.ac.uk/P/UKIDSS/GCS/H	GCSH
+wfau.roe.ac.uk/P/UKIDSS/GCS/J	GCSJ
+wfau.roe.ac.uk/P/UKIDSS/GCS/K1	GCSK1
+wfau.roe.ac.uk/P/UKIDSS/GCS/K2	GCSK2
+wfau.roe.ac.uk/P/UKIDSS/GCS/Y	GCSY
+wfau.roe.ac.uk/P/UKIDSS/GCS/Z	GCSZ
+wfau.roe.ac.uk/P/UKIDSS/LAS/H	LASH
+wfau.roe.ac.uk/P/UKIDSS/LAS/J1	LASJ1
+wfau.roe.ac.uk/P/UKIDSS/LAS/J2	LASJ2
+wfau.roe.ac.uk/P/UKIDSS/LAS/K	LASK
+wfau.roe.ac.uk/P/UKIDSS/LAS/Y	LASY
+wfau.roe.ac.uk/UHSDR1/J	UHS DR1 J
+xcatdb/P/XMM/PN/color	False color X-ray images (Red=0.5-1 Green=1-2 Blue=2-4.5 Kev )
+xcatdb/P/XMM/PN/eb2	X-ray images on band 0.5-1Kev
+xcatdb/P/XMM/PN/eb3	X-ray images on band 1-2Kev
