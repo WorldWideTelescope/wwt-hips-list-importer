@@ -48,7 +48,7 @@ def realize_folder(info: dict, imagesets: dict):
     f = Folder(name=info["_name"])
     # TODO: FolderType
     f.group = "Explorer"
-    f.searchable = False
+    f.searchable = True
 
     for item in info["children"]:
         if isinstance(item, dict):
