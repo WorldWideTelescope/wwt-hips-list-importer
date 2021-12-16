@@ -3,130 +3,254 @@
 # Copyright 2021 the .NET Foundation
 # Licensed under the MIT License
 
-from xml.etree.ElementTree import Element
-import xml.etree.ElementTree as et
+from datetime import datetime
 import requests
+import yaml
 
 PLANETS_CATEGORY_NAME = "Planets & Moons"
 
 
-class Convert:
+class Folder(object):
+    def __init__(self, name, name_map):
+        self.name = name
+        self.children = []  # each item is either a Folder or string dataset ID
+        name_map[name] = self
+
+    def add_subfolder(self, name, name_map):
+        child = Folder(name, name_map)
+        self.children.append(child)
+        return child
+
+    def add_subfolders(self, name_map, *names):
+        for name in names:
+            self.add_subfolder(name, name_map)
+
+    def as_yaml(self):
+        yaml_children = []
+        d = {"_name": self.name, "children": yaml_children}
+
+        for c in self.children:
+            if isinstance(c, Folder):
+                yaml_children.append(c.as_yaml())
+            else:
+                yaml_children.append(c)
+
+        return d
+
+    @classmethod
+    def stub_folders(cls):
+        name_map = {}
+
+        root = Folder("HiPS Surveys", name_map)
+
+        images = root.add_subfolder("Images", name_map)
+        _catalogs = root.add_subfolder("Catalogs", name_map)
+        heatmaps = root.add_subfolder("Heatmaps", name_map)
+
+        images.add_subfolders(
+            name_map,
+            "Gamma",
+            "XRay",
+            "Ultraviolet",
+            "Visible",
+            "Infrared",
+            "Microwave",
+            "Radio",
+            PLANETS_CATEGORY_NAME,
+            "Uncategorized",
+        )
+
+        heatmaps.add_subfolders(
+            name_map,
+            "By Object Type",
+            "By Date",
+        )
+
+        return name_map
+
+    @classmethod
+    def load_hierarchy(cls):
+        name_map = {}
+        seen_datasets = set()
+
+        def load_one(info):
+            f = Folder(info["_name"], name_map)
+
+            for item in info["children"]:
+                if isinstance(item, dict):
+                    f.children.append(load_one(item))
+                else:
+                    seen_datasets.add(item)
+                    f.children.append(item)
+
+            return f
+
+        with open("hierarchy.yml", "rt", encoding="utf-8") as f:
+            info = yaml.load(f, yaml.SafeLoader)
+            root = load_one(info)
+
+        return name_map, seen_datasets
+
+
+class Convert(object):
     def __init__(self):
-        self.root = et.Element("Folder", self.get_default_attributes("HIPS Surveys"))
-        self.images = et.SubElement(
-            self.root, "Folder", self.get_default_attributes("Images")
-        )
-        self.catalogs = et.SubElement(
-            self.root, "Folder", self.get_default_attributes("Catalogs")
-        )
-        self.heatmaps = et.SubElement(
-            self.root, "Folder", self.get_default_attributes("Heatmaps")
-        )
+        self.folders_by_name, self.seen_datasets = Folder.load_hierarchy()
+        self.image_data = []
 
-        self.images_gamma = et.SubElement(
-            self.images, "Folder", self.get_default_attributes("Gamma")
-        )
-        self.images_xray = et.SubElement(
-            self.images, "Folder", self.get_default_attributes("XRay")
-        )
-        self.images_uv = et.SubElement(
-            self.images, "Folder", self.get_default_attributes("Ultraviolet")
-        )
-        self.images_visible = et.SubElement(
-            self.images, "Folder", self.get_default_attributes("Visible")
-        )
-        self.images_ir = et.SubElement(
-            self.images, "Folder", self.get_default_attributes("IR")
-        )
-        self.images_microwave = et.SubElement(
-            self.images, "Folder", self.get_default_attributes("Microwave")
-        )
-        self.images_radio = et.SubElement(
-            self.images, "Folder", self.get_default_attributes("Radio")
-        )
-        self.images_planets = et.SubElement(
-            self.images, "Folder", self.get_default_attributes(PLANETS_CATEGORY_NAME)
-        )
-        self.images_uncategorized = et.SubElement(
-            self.images, "Folder", self.get_default_attributes("Uncategorized")
-        )
+        self.root = self.folders_by_name["HiPS Surveys"]
+        self.images = self.folders_by_name["Images"]
+        self.catalogs = self.folders_by_name["Catalogs"]
+        self.heatmaps = self.folders_by_name["Heatmaps"]
+        self.images_gamma = self.folders_by_name["Gamma"]
+        self.images_xray = self.folders_by_name["XRay"]
+        self.images_uv = self.folders_by_name["Ultraviolet"]
+        self.images_visible = self.folders_by_name["Visible"]
+        self.images_ir = self.folders_by_name["Infrared"]
+        self.images_microwave = self.folders_by_name["Microwave"]
+        self.images_radio = self.folders_by_name["Radio"]
+        self.images_planets = self.folders_by_name[PLANETS_CATEGORY_NAME]
+        self.images_uncategorized = self.folders_by_name["Uncategorized"]
+        self.heatmaps_by_object = self.folders_by_name["By Object Type"]
+        self.heatmaps_by_date = self.folders_by_name["By Date"]
 
-        self.heatmaps_by_object = et.SubElement(
-            self.heatmaps, "Folder", self.get_default_attributes("By Object Type")
-        )
-        self.heatmaps_by_date = et.SubElement(
-            self.heatmaps, "Folder", self.get_default_attributes("By Date")
-        )
+    # High-level processing of the input list
 
-        self.add_version_dependent(self.root, False)
-        self.add_version_dependent(self.images, False)
-        self.add_version_dependent(self.catalogs, False)
-        self.add_version_dependent(self.images_gamma, False)
-        self.add_version_dependent(self.images_xray, False)
-        self.add_version_dependent(self.images_radio, False)
-        self.add_version_dependent(self.images_ir, False)
-        self.add_version_dependent(self.images_uv, False)
-        self.add_version_dependent(self.images_visible, False)
-        self.add_version_dependent(self.images_microwave, False)
-        self.add_version_dependent(self.images_planets, False)
-        self.add_version_dependent(self.images_uncategorized, False)
-        self.add_version_dependent(self.heatmaps, False)
-        self.add_version_dependent(self.heatmaps_by_date, False)
-        self.add_version_dependent(self.heatmaps_by_object, False)
+    def convert(self, json_object: list):
+        for info in json_object:
+            type = info.get("dataproduct_type", "")
+            id = info.get("ID", "")
 
-    def add_version_dependent(self, parent: Element, is_dependent: bool):
-        version_dependent = et.Element("VersionDependent")
-        version_dependent.text = str(is_dependent).lower()
-        parent.insert(0, version_dependent)
+            if id == "CDS/P/DM/simbad-biblio/allObjects":
+                self.add_heatmap_container(info)
+            elif "heatmap" in info.get("client_category", ""):
+                self.add_heatmap(info)
+            elif type == "cube":
+                continue
+            elif type == "image":
+                self.add_image(info)
+            elif type == "catalog":
+                self.add_catalog(info)
 
-    def write_file(self, out_file: str):
-        tree = et.ElementTree(self.root)
-        et.indent(tree, space="  ", level=0)
-        tree.write(out_file, encoding="utf-8", xml_declaration=True)
+        return self
 
-    def get_default_attributes(self, name: str):
-        return {
-            "MSRCommunityId": "0",
-            "MSRComponentId": "0",
-            "Permission": "0",
-            "Name": name,
-            "Group": "Explorer",
-            "Searchable": "False",
-            "Type": "Sky",
-        }
+    def add_catalog(self, info: dict):
+        self.add_image_set(info, self.catalogs)
 
-    def get_element_attribute(self, element: Element, attribute: str):
-        if attribute in element:
-            return element[attribute]
+    def add_image(self, info: dict):
+        regime = info.get("obs_regime", "")
+
+        if isinstance(regime, list):
+            regime = regime[0]
+
+        regime = regime.lower()
+
+        if "radio" in regime:
+            self.add_image_set(info, self.images_radio)
+        elif "gamma-ray" in regime or "gamma" in regime:
+            self.add_image_set(info, self.images_gamma)
+        elif "x-ray" in regime or "xray" in regime:
+            self.add_image_set(info, self.images_xray)
+        elif "infrared" in regime or "ir" in regime:
+            self.add_image_set(info, self.images_ir)
+        elif "uv" in regime or "ultraviolet" in regime:
+            self.add_image_set(info, self.images_uv)
+        elif "optical" in regime:
+            self.add_image_set(info, self.images_visible)
+        elif "millimeter" in regime or "microwave" in regime:
+            self.add_image_set(info, self.images_microwave)
         else:
-            return ""
+            hips_frame = info.get("hips_frame", "").lower()
+            if (
+                "galactic" in hips_frame
+                or "ecliptic" in hips_frame
+                or "equatorial" in hips_frame
+            ):
+                self.add_image_set(info, self.images_uncategorized)
+            else:
+                self.add_image_set(info, self.images_planets)
 
-    def get_credits_url(self, element: Element):
-        credits_url = self.get_element_attribute(element, "obs_copyright_url")
+    def add_heatmap(self, info: dict):
+        category = info.get("client_category", "")
+
+        if "heatmaps by object types" in category:
+            self.add_image_set(info, self.heatmaps_by_object)
+        else:
+            self.add_image_set(info, self.heatmaps_by_date)
+
+    def add_heatmap_container(self, info: dict):
+        self.add_image_set(info, self.heatmaps)
+
+    def add_image_set(self, info: dict, folder: Folder):
+        ident = info["ID"]
+
+        bandpass_name = self.get_bandpass_name(info)
+
+        dataset_type = "Sky"
+        if bandpass_name == PLANETS_CATEGORY_NAME:
+            bandpass_name = "Uncategorized"
+
+            if "panorama" in info.get("obs_title", "").lower():
+                dataset_type = "Panorama"
+            else:
+                dataset_type = "Planet"
+
+        url = info.get("hips_service_url", "").strip("/") + "/Norder{0}/Dir{1}/Npix{2}"
+        tile_levels = info.get("hips_order", "")
+        name = self.get_name(info)
+        file_type = self.get_file_type(info)
+        credits = self.get_credits(info)
+        credits_url = self.get_credits_url(info)
+        thumbnail_url = info.get("hips_service_url", "").strip("/") + "/preview.jpg"
+
+        # Record the information in three ways:
+        #
+        # - Simple table-of-contents record
+        # - Metadata of interest in `datasets.yml` for manual review and editing
+        # - Add into folder hierarchy if not already there
+
+        self.image_data.append(
+            {
+                "_id": ident,
+                "_name": name,
+                "bandpass": bandpass_name,
+                "credits": credits,
+                "credits_url": credits_url,
+                "file_type": file_type,
+                "tile_levels": int(tile_levels),
+                "thumbnail_url": thumbnail_url,
+                "type": dataset_type,
+                "url": url,
+            }
+        )
+
+        if ident not in self.seen_datasets:
+            folder.children.append(ident)
+
+    # Low-level data munging helpers
+
+    def get_credits_url(self, info: dict):
+        credits_url = info.get("obs_copyright_url", "")
         if isinstance(credits_url, list):
-            return (
-                self.get_element_attribute(element, "hips_service_url").strip("/")
-                + "/properties"
-            )
+            return info.get("hips_service_url", "").strip("/") + "/properties"
         else:
             return credits_url
 
-    def get_credits(self, element: Element):
-        credits = self.get_element_attribute(element, "obs_copyright")
+    def get_credits(self, info: dict):
+        credits = info.get("obs_copyright", "")
         if isinstance(credits, list):
             return ", ".join(credits)
         else:
             return credits
 
-    def get_name(self, element: Element):
-        name = self.get_element_attribute(element, "obs_title")
+    def get_name(self, info: dict):
+        name = info.get("obs_title", "")
         if not name:
-            name = self.get_element_attribute(element, "ID")
+            name = info.get("ID", "")
 
         return name
 
-    def get_file_type(self, element: Element):
-        file_formats = self.get_element_attribute(element, "hips_tile_format")
+    def get_file_type(self, info: dict):
+        file_formats = info.get("hips_tile_format", "")
 
         file_formats_arr = file_formats.split(" ")
 
@@ -137,8 +261,8 @@ class Convert:
 
         return file_formats
 
-    def get_bandpass_name(self, element: Element):
-        regime = self.get_element_attribute(element, "obs_regime")
+    def get_bandpass_name(self, info: dict):
+        regime = info.get("obs_regime", "")
 
         if isinstance(regime, list):
             regime = regime[0]
@@ -152,7 +276,7 @@ class Convert:
         elif "x-ray" in regime or "xray" in regime:
             return "XRay"
         elif "infrared" in regime or "ir" in regime:
-            return "IR"
+            return "Infrared"
         elif "uv" in regime or "ultraviolet" in regime:
             return "Ultraviolet"
         elif "optical" in regime:
@@ -160,7 +284,7 @@ class Convert:
         elif "millimeter" in regime or "microwave" in regime:
             return "Microwave"
         else:
-            hips_frame = self.get_element_attribute(element, "hips_frame").lower()
+            hips_frame = info.get("hips_frame", "").lower()
             if (
                 "galactic" in hips_frame
                 or "ecliptic" in hips_frame
@@ -170,125 +294,49 @@ class Convert:
             else:
                 return PLANETS_CATEGORY_NAME
 
-    def convert(self, json_object):
-        for element in json_object:
-            type = self.get_element_attribute(element, "dataproduct_type")
-            id = self.get_element_attribute(element, "ID")
+    # Writing out the processed data
 
-            if id == "CDS/P/DM/simbad-biblio/allObjects":
-                self.add_heatmap_container(element)
-            elif "heatmap" in self.get_element_attribute(element, "client_category"):
-                self.add_heatmap(element)
-            elif type == "cube":
-                continue
-            elif type == "image":
-                self.add_image(element)
-            elif type == "catalog":
-                self.add_catalog(element)
+    def emit_toc(self, stream):
+        print(f"updated: {datetime.utcnow().isoformat()}\n", file=stream)
 
-        return self
+        for info in sorted(self.image_data, key=lambda d: d["_id"]):
+            print(f"{info['_id']}\t{info['_name']}", file=stream)
 
-    def add_catalog(self, element: Element):
-        self.add_image_set(element, self.catalogs)
-
-    def add_image(self, element: Element):
-        regime = self.get_element_attribute(element, "obs_regime")
-
-        if isinstance(regime, list):
-            regime = regime[0]
-
-        regime = regime.lower()
-
-        if "radio" in regime:
-            self.add_image_set(element, self.images_radio)
-        elif "gamma-ray" in regime or "gamma" in regime:
-            self.add_image_set(element, self.images_gamma)
-        elif "x-ray" in regime or "xray" in regime:
-            self.add_image_set(element, self.images_xray)
-        elif "infrared" in regime or "ir" in regime:
-            self.add_image_set(element, self.images_ir)
-        elif "uv" in regime or "ultraviolet" in regime:
-            self.add_image_set(element, self.images_uv)
-        elif "optical" in regime:
-            self.add_image_set(element, self.images_visible)
-        elif "millimeter" in regime or "microwave" in regime:
-            self.add_image_set(element, self.images_microwave)
-        else:
-            hips_frame = self.get_element_attribute(element, "hips_frame").lower()
-            if (
-                "galactic" in hips_frame
-                or "ecliptic" in hips_frame
-                or "equatorial" in hips_frame
-            ):
-                self.add_image_set(element, self.images_uncategorized)
-            else:
-                self.add_image_set(element, self.images_planets)
-
-    def add_heatmap(self, element: Element):
-        category = self.get_element_attribute(element, "client_category")
-
-        if "heatmaps by object types" in category:
-            self.add_image_set(element, self.heatmaps_by_object)
-        else:
-            self.add_image_set(element, self.heatmaps_by_date)
-
-    def add_heatmap_container(self, element: Element):
-        self.add_image_set(element, self.heatmaps)
-
-    def add_image_set(self, element: Element, parent: Element):
-        bandpass_name = self.get_bandpass_name(element)
-
-        dataset_type = "Sky"
-        if self.get_bandpass_name(element) == PLANETS_CATEGORY_NAME:
-            if "panorama" in self.get_element_attribute(element, "obs_title").lower():
-                dataset_type = "Panorama"
-            else:
-                dataset_type = "Planet"
-
-        image_set = et.SubElement(
-            parent,
-            "ImageSet",
-            DemUrl="",
-            MSRCommunityId="0",
-            MSRComponentId="0",
-            Permission="0",
-            Generic="False",
-            DataSetType=dataset_type,
-            BandPass=bandpass_name,
-            Url=self.get_element_attribute(element, "hips_service_url").strip("/")
-            + "/Norder{0}/Dir{1}/Npix{2}",
-            TileLevels=self.get_element_attribute(element, "hips_order"),
-            WidthFactor="1",
-            Sparse="False",
-            Rotation="0",
-            QuadTreeMap="0123",
-            Projection="Healpix",
-            Name=self.get_name(element),
-            FileType=self.get_file_type(element),
-            CenterY="0",
-            CenterX="0",
-            BottomsUp="False",
-            StockSet="False",
-            ElevationModel="False",
-            OffsetX="0",
-            OffsetY="0",
-            BaseTileLevel="0",
-            BaseDegreesPerTile="180",
-            ReferenceFrame="Sky",
-            MeanRadius="1",
+    def emit_image_data(self, stream):
+        yaml.dump_all(
+            sorted(self.image_data, key=lambda r: r["_id"]),
+            stream=stream,
+            allow_unicode=True,
+            sort_keys=True,
+            indent=2,
         )
 
-        et.SubElement(image_set, "Credits").text = self.get_credits(element)
-        et.SubElement(image_set, "CreditsUrl").text = self.get_credits_url(element)
-        et.SubElement(image_set, "ThumbnailUrl").text = (
-            self.get_element_attribute(element, "hips_service_url").strip("/")
-            + "/preview.jpg"
+    def emit_hierarchy(self, stream):
+        yaml.dump(
+            self.root.as_yaml(),
+            stream=stream,
+            allow_unicode=True,
+            indent=2,
         )
 
 
-conv = Convert()
+def entrypoint():
+    hips_list_json = requests.get(
+        "http://aladin.u-strasbg.fr/hips/globalhipslist?fmt=json"
+    ).json()
 
-hips_list_json = requests.get(
-    "http://aladin.u-strasbg.fr/hips/globalhipslist?fmt=json"
-).json()
-conv.convert(hips_list_json).write_file("hips-list.wtml")
+    conv = Convert()
+    conv.convert(hips_list_json)
+
+    with open("toc.txt", "wt", encoding="utf-8") as f:
+        conv.emit_toc(f)
+
+    with open("datasets.yml", "wt", encoding="utf-8") as f:
+        conv.emit_image_data(f)
+
+    with open("hierarchy.yml", "wt", encoding="utf-8") as f:
+        conv.emit_hierarchy(f)
+
+
+if __name__ == "__main__":
+    entrypoint()
