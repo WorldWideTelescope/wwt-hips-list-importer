@@ -2916,7 +2916,7 @@ type: Sky
 url: http://alasky.u-strasbg.fr/Haslam408/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: CDS/P/Haslam408/v2
-_name: Haslam 408Mhz reprocessed
+_name: Haslam 408 MHz reprocessed
 bandpass: Radio
 credits: LAMBDA/NASA
 credits_url: http://lambda.gsfc.nasa.gov/product/foreground/2014_haslam_408_info.cfm
@@ -5213,7 +5213,7 @@ type: Sky
 url: http://skies.esac.esa.int/Herschel/PACS100/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ESAVO/P/HERSCHEL/PACS100norm
-_name: PACS100norm
+_name: Herschel PACS 100 norm
 bandpass: Infrared
 credits: ESA/HSA
 credits_url: http://www.cosmos.esa.int/web/herschel/publishing-rules-guidelines
@@ -5235,7 +5235,7 @@ type: Sky
 url: http://skies.esac.esa.int/Herschel/PACS160/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ESAVO/P/HERSCHEL/PACS160norm
-_name: PACS160norm
+_name: Herschel PACS 160 norm
 bandpass: Infrared
 credits: ESA/HSA
 credits_url: http://www.cosmos.esa.int/web/herschel/publishing-rules-guidelines
@@ -5257,7 +5257,7 @@ type: Sky
 url: http://skies.esac.esa.int/Herschel/PACS70/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ESAVO/P/HERSCHEL/PACS70norm
-_name: PACS70norm
+_name: Herschel PACS 70 norm
 bandpass: Infrared
 credits: ESA/HSA
 credits_url: http://www.cosmos.esa.int/web/herschel/publishing-rules-guidelines
@@ -5268,7 +5268,7 @@ type: Sky
 url: http://skies.esac.esa.int/Herschel/normalized/PACS_hips70/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ESAVO/P/HERSCHEL/PACS_RGB_norm
-_name: PACS_RGB_norm
+_name: Herschel PACS RGB norm
 bandpass: Infrared
 credits: ESA/HSA
 credits_url: http://www.cosmos.esa.int/web/herschel/publishing-rules-guidelines
@@ -5279,7 +5279,7 @@ type: Sky
 url: http://skies.esac.esa.int/Herschel/normalized/PACS_hipsRGB/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ESAVO/P/HERSCHEL/SPIRE-250
-_name: SPIRE250
+_name: Herschel SPIRE 250 micron
 bandpass: Infrared
 credits: ESA/HSA
 credits_url: http://www.cosmos.esa.int/web/herschel/publishing-rules-guidelines
@@ -5290,7 +5290,7 @@ type: Sky
 url: http://skies.esac.esa.int/Herschel/SPIRE250/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ESAVO/P/HERSCHEL/SPIRE-350
-_name: SPIRE350
+_name: Herschel SPIRE 350 micron
 bandpass: Infrared
 credits: ESA/HSA
 credits_url: http://www.cosmos.esa.int/web/herschel/publishing-rules-guidelines
@@ -5323,7 +5323,7 @@ type: Sky
 url: http://skies.esac.esa.int/Herschel/SPIRE-color/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ESAVO/P/HERSCHEL/SPIRE250norm
-_name: SPIRE250norm
+_name: Herschel SPIRE 250 norm
 bandpass: Infrared
 credits: ESA/HSA
 credits_url: http://www.cosmos.esa.int/web/herschel/publishing-rules-guidelines
@@ -5334,7 +5334,7 @@ type: Sky
 url: http://skies.esac.esa.int/Herschel/normalized/hips250_pnorm_allsky/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ESAVO/P/HERSCHEL/SPIRE350norm
-_name: SPIRE350norm
+_name: Herschel SPIRE 350 norm
 bandpass: Infrared
 credits: ESA/HSA
 credits_url: http://www.cosmos.esa.int/web/herschel/publishing-rules-guidelines
@@ -5345,7 +5345,7 @@ type: Sky
 url: http://skies.esac.esa.int/Herschel/normalized/hips350_pnorm_allsky/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ESAVO/P/HERSCHEL/SPIRE500norm
-_name: SPIRE500norm
+_name: Herschel SPIRE 500 norm
 bandpass: Infrared
 credits: ESA/HSA
 credits_url: http://www.cosmos.esa.int/web/herschel/publishing-rules-guidelines
@@ -5356,7 +5356,7 @@ type: Sky
 url: http://skies.esac.esa.int/Herschel/normalized/hips500_pnorm_allsky/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ESAVO/P/HERSCHEL/SPIRE_RGBnorm
-_name: SPIRE_RGBnorm
+_name: Herschel SPIRE RGB norm
 bandpass: Infrared
 credits: ESA/HSA
 credits_url: http://www.cosmos.esa.int/web/herschel/publishing-rules-guidelines
@@ -5841,7 +5841,7 @@ type: Sky
 url: http://www.spitzer.caltech.edu/glimpse360/aladin/data/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: JAXA/AKARI/FIS/Catalogue/AllSky/BrightSource
-_name: JAXA/AKARI/FIS/Catalogue/AllSky/BrightSource
+_name: AKARI FIS Catalogue AllSky - BrightSource
 bandpass: Uncategorized
 credits: ''
 credits_url: ''
@@ -5852,7 +5852,7 @@ type: Sky
 url: https://data.darts.isas.jaxa.jp/pub/HiPS/AKARI-FIS_Catalogue_AllSky_BrightSource/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: JAXA/AKARI/IRC/Catalogue/AllSky/PointSource
-_name: JAXA/AKARI/IRC/Catalogue/AllSky/PointSource
+_name: AKARI IRC Catalogue AllSky - PointSource
 bandpass: Uncategorized
 credits: ''
 credits_url: ''
@@ -5863,7 +5863,7 @@ type: Sky
 url: https://data.darts.isas.jaxa.jp/pub/HiPS/AKARI-IRC_Catalogue_AllSky_PointSource/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: JAXA/AKARI/IRC/Catalogue/Pointed/LMCPointSource
-_name: JAXA/AKARI/IRC/Catalogue/Pointed/LMCPointSource
+_name: AKARI IRC Catalogue Pointed - LMC Point Source
 bandpass: Uncategorized
 credits: ''
 credits_url: ''
@@ -5874,7 +5874,7 @@ type: Sky
 url: https://data.darts.isas.jaxa.jp/pub/HiPS/AKARI-IRC_Catalogue_Pointed_LMCPointSource/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: JAXA/AKARI/IRC/Catalogue/Pointed/NEPDeep
-_name: JAXA/AKARI/IRC/Catalogue/Pointed/NEPDeep
+_name: AKARI IRC Catalogue Pointed - NEP Deep
 bandpass: Uncategorized
 credits: ''
 credits_url: ''
@@ -5885,7 +5885,7 @@ type: Sky
 url: https://data.darts.isas.jaxa.jp/pub/HiPS/AKARI-IRC_Catalogue_Pointed_NEPDeep/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: JAXA/AKARI/IRC/Catalogue/Pointed/NEPWide
-_name: JAXA/AKARI/IRC/Catalogue/Pointed/NEPWide
+_name: AKARI IRC Catalogue Pointed - NEP Wide
 bandpass: Uncategorized
 credits: ''
 credits_url: ''
@@ -5896,7 +5896,7 @@ type: Sky
 url: https://data.darts.isas.jaxa.jp/pub/HiPS/AKARI-IRC_Catalogue_Pointed_NEPWide/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: JAXA/CHANDRA/Catalogue
-_name: JAXA/CHANDRA/Catalogue
+_name: JAXA Chandra Catalogue
 bandpass: Uncategorized
 credits: ''
 credits_url: ''
@@ -5907,7 +5907,7 @@ type: Sky
 url: https://data.darts.isas.jaxa.jp/pub/HiPS/CHANDRA_Catalogue/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: JAXA/MAXI/GSC/Catalogue
-_name: JAXA/MAXI/GSC/Catalogue
+_name: JAXA MAXI GSC Catalogue
 bandpass: Uncategorized
 credits: ''
 credits_url: ''
@@ -5984,7 +5984,7 @@ type: Sky
 url: https://data.darts.isas.jaxa.jp/pub/HiPS/ASCA-SIS_Image/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: JAXA/P/BICE/Image
-_name: ID1490928593
+_name: JAXA BICE Image
 bandpass: Infrared
 credits: ''
 credits_url: ''
@@ -5995,7 +5995,7 @@ type: Sky
 url: https://data.darts.isas.jaxa.jp/pub/HiPS/BICE_Image/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: JAXA/P/CONSTELLATIONS/Image/Drawing/Color
-_name: CONSTELLATIONS3
+_name: JAXA constellations drawings - color
 bandpass: Uncategorized
 credits: AstroArts Inc.
 credits_url: http://www.astroarts.co.jp/index.shtml
@@ -6006,7 +6006,7 @@ type: Sky
 url: https://data.darts.isas.jaxa.jp/pub/HiPS/CONSTELLATIONS_Image_Drawing_Color/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: JAXA/P/CONSTELLATIONS/Image/Drawing/Monochrome
-_name: CONSTELLATIONS1
+_name: JAXA constellations drawings - monochrome
 bandpass: Uncategorized
 credits: AstroArts Inc.
 credits_url: http://www.astroarts.co.jp/index.shtml
@@ -6017,7 +6017,7 @@ type: Sky
 url: https://data.darts.isas.jaxa.jp/pub/HiPS/CONSTELLATIONS_Image_Drawing_Monochrome/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: JAXA/P/CONSTELLATIONS/Image/Lines
-_name: CONSTELLATIONS5
+_name: JAXA constellations drawings - lines
 bandpass: Uncategorized
 credits: AstroArts Inc.
 credits_url: http://www.astroarts.co.jp/index.shtml
@@ -6028,7 +6028,7 @@ type: Sky
 url: https://data.darts.isas.jaxa.jp/pub/HiPS/CONSTELLATIONS_Image_Lines/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: JAXA/P/CONSTELLATIONS/Image/Painting/Color
-_name: CONSTELLATIONS4
+_name: JAXA constellations paintings - color
 bandpass: Uncategorized
 credits: AstroArts Inc.
 credits_url: http://www.astroarts.co.jp/index.shtml
@@ -6039,7 +6039,7 @@ type: Sky
 url: https://data.darts.isas.jaxa.jp/pub/HiPS/CONSTELLATIONS_Image_Painting_Color/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: JAXA/P/CONSTELLATIONS/Image/Painting/KAGAYA
-_name: CONSTELLATIONS6
+_name: JAXA constellations paintings - Kagaya
 bandpass: Uncategorized
 credits: Kagaya Studio
 credits_url: http://www.kagayastudio.com/english/
@@ -6050,7 +6050,7 @@ type: Sky
 url: https://data.darts.isas.jaxa.jp/pub/HiPS/CONSTELLATIONS_Image_Painting_KAGAYA/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: JAXA/P/CONSTELLATIONS/Image/Painting/Monochrome
-_name: CONSTELLATIONS2
+_name: JAXA constellations paintings - monochrome
 bandpass: Uncategorized
 credits: AstroArts Inc.
 credits_url: http://www.astroarts.co.jp/index.shtml
@@ -6105,7 +6105,7 @@ type: Sky
 url: https://data.darts.isas.jaxa.jp/pub/HiPS/MAXI-GSC_Image/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: JAXA/P/MAXI/GSC/Image/forBrightSource
-_name: MAXI GSC
+_name: MAXI GSC forBrightSource
 bandpass: XRay
 credits: ''
 credits_url: ''
@@ -6127,7 +6127,7 @@ type: Sky
 url: https://data.darts.isas.jaxa.jp/pub/HiPS/MAXI-SSC_Image/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: JAXA/P/MAXI/SSC/Image/ContourBinning
-_name: MAXI SSC
+_name: MAXI SSC contourBinning
 bandpass: XRay
 credits: ''
 credits_url: ''
@@ -6160,7 +6160,7 @@ type: Sky
 url: https://data.darts.isas.jaxa.jp/pub/HiPS/SWIFT-BAT_Image/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: JAXA/SUZAKU/HXD/WAM/Catalogue
-_name: JAXA/SUZAKU/HXD/WAM/Catalogue
+_name: JAXA Suzaku HXD WAM Catalogue
 bandpass: Uncategorized
 credits: ''
 credits_url: ''
@@ -6171,7 +6171,7 @@ type: Sky
 url: https://data.darts.isas.jaxa.jp/pub/HiPS/SUZAKU-HXD-WAM_Catalogue/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: JAXA/SWIFT/BAT/Catalogue
-_name: Swift BAT progressive catalog
+_name: JAXA Swift BAT progressive catalog
 bandpass: Uncategorized
 credits: ''
 credits_url: ''
@@ -6182,7 +6182,7 @@ type: Sky
 url: https://data.darts.isas.jaxa.jp/pub/HiPS/SWIFT-BAT_Catalogue/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: JAXA/SWIFT/XRT/Catalogue
-_name: Swift XRT progressive catalog
+_name: JAXA Swift XRT progressive catalog
 bandpass: Uncategorized
 credits: ''
 credits_url: ''
@@ -6193,7 +6193,7 @@ type: Sky
 url: https://data.darts.isas.jaxa.jp/pub/HiPS/SWIFT-XRT_Catalogue/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: JAXA/XMM/EPIC/Catalogue
-_name: JAXA/XMM/EPIC/Catalogue
+_name: JAXA XMM-EPIC Catalogue
 bandpass: Uncategorized
 credits: ''
 credits_url: ''
@@ -6204,7 +6204,7 @@ type: Sky
 url: https://data.darts.isas.jaxa.jp/pub/HiPS/XMM-EPIC_Catalogue/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: Leiden/P/TGSSADR
-_name: The TIFR GMRT Sky Survey, Alternative Data Release
+_name: The TIFR GMRT Sky Survey, Alternative Data Release - Imagery (Leiden)
 bandpass: Radio
 credits: TGSS ADR webpage
 credits_url: http://tgssadr.strw.leidenuniv.nl/
@@ -6215,7 +6215,7 @@ type: Sky
 url: http://tgssadr.strw.leidenuniv.nl/hips/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: Leiden/TGSSADR/7sigma
-_name: The TIFR GMRT Sky Survey, Alternative Data Release
+_name: The TIFR GMRT Sky Survey, Alternative Data Release - Catalog
 bandpass: Radio
 credits: TGSS ADR webpage
 credits_url: http://tgssadr.strw.leidenuniv.nl/
@@ -6270,7 +6270,7 @@ type: Sky
 url: https://hips.astron.nl/ASTRON/P/lotss_dr1_low/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: astron.nl/P/tgssadr
-_name: TGSADR
+_name: The TIFR GMRT Sky Survey, Alternative Data Release - Imagery (ASTRON)
 bandpass: Radio
 credits: ''
 credits_url: ''
@@ -10045,7 +10045,7 @@ type: Sky
 url: http://cade.irap.omp.eu/documents/Ancillary/4Aladin/MITEoR_SIGMA/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ov-gso/P/Madden/250
-_name: Madden?s Program 250 microns
+_name: Madden’s Program 250 microns
 bandpass: Infrared
 credits: IRAP/CADE
 credits_url: http://cade.irap.omp.eu
@@ -10056,7 +10056,7 @@ type: Sky
 url: http://cade.irap.omp.eu/documents/Ancillary/4Aladin/Madden_250/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ov-gso/P/Madden/250/SIGMA
-_name: Madden?s Program 250 microns SIGMA
+_name: Madden’s Program 250 microns SIGMA
 bandpass: Infrared
 credits: IRAP/CADE
 credits_url: http://cade.irap.omp.eu
@@ -10067,7 +10067,7 @@ type: Sky
 url: http://cade.irap.omp.eu/documents/Ancillary/4Aladin/Madden_250_SIGMA/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ov-gso/P/Madden/350
-_name: Madden?s Program 350 microns
+_name: Madden’s Program 350 microns
 bandpass: Infrared
 credits: IRAP/CADE
 credits_url: http://cade.irap.omp.eu
@@ -10078,7 +10078,7 @@ type: Sky
 url: http://cade.irap.omp.eu/documents/Ancillary/4Aladin/Madden_350/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ov-gso/P/Madden/350/SIGMA
-_name: Madden?s Program 350 microns SIGMA
+_name: Madden’s Program 350 microns SIGMA
 bandpass: Infrared
 credits: IRAP/CADE
 credits_url: http://cade.irap.omp.eu
@@ -10089,7 +10089,7 @@ type: Sky
 url: http://cade.irap.omp.eu/documents/Ancillary/4Aladin/Madden_350_SIGMA/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ov-gso/P/Madden/500
-_name: Madden?s Program 500 microns
+_name: Madden’s Program 500 microns
 bandpass: Infrared
 credits: IRAP/CADE
 credits_url: http://cade.irap.omp.eu
@@ -10100,7 +10100,7 @@ type: Sky
 url: http://cade.irap.omp.eu/documents/Ancillary/4Aladin/Madden_500/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ov-gso/P/Madden/500/SIGMA
-_name: Madden?s Program 500 microns SIGMA
+_name: Madden’s Program 500 microns SIGMA
 bandpass: Infrared
 credits: IRAP/CADE
 credits_url: http://cade.irap.omp.eu
@@ -10111,7 +10111,7 @@ type: Sky
 url: http://cade.irap.omp.eu/documents/Ancillary/4Aladin/Madden_500_SIGMA/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ov-gso/P/Meisenheimer/250
-_name: Meisenheimer?s Program 250 microns
+_name: Meisenheimer’s Program 250 microns
 bandpass: Infrared
 credits: IRAP/CADE
 credits_url: http://cade.irap.omp.eu
@@ -10122,7 +10122,7 @@ type: Sky
 url: http://cade.irap.omp.eu/documents/Ancillary/4Aladin/Meisenheimer_250/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ov-gso/P/Meisenheimer/250/SIGMA
-_name: Meisenheimer?s Program 250 microns SIGMA
+_name: Meisenheimer’s Program 250 microns SIGMA
 bandpass: Infrared
 credits: IRAP/CADE
 credits_url: http://cade.irap.omp.eu
@@ -10133,7 +10133,7 @@ type: Sky
 url: http://cade.irap.omp.eu/documents/Ancillary/4Aladin/Meisenheimer_250_SIGMA/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ov-gso/P/Meisenheimer/350
-_name: Meisenheimer?s Program 350 microns
+_name: Meisenheimer’s Program 350 microns
 bandpass: Infrared
 credits: IRAP/CADE
 credits_url: http://cade.irap.omp.eu
@@ -10144,7 +10144,7 @@ type: Sky
 url: http://cade.irap.omp.eu/documents/Ancillary/4Aladin/Meisenheimer_350/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ov-gso/P/Meisenheimer/350/SIGMA
-_name: Meisenheimer?s Program 350 microns SIGMA
+_name: Meisenheimer’s Program 350 microns SIGMA
 bandpass: Infrared
 credits: IRAP/CADE
 credits_url: http://cade.irap.omp.eu
@@ -10155,7 +10155,7 @@ type: Sky
 url: http://cade.irap.omp.eu/documents/Ancillary/4Aladin/Meisenheimer_350_SIGMA/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ov-gso/P/Meisenheimer/500
-_name: Meisenheimer?s Program 500 microns
+_name: Meisenheimer’s Program 500 microns
 bandpass: Infrared
 credits: IRAP/CADE
 credits_url: http://cade.irap.omp.eu
@@ -10166,7 +10166,7 @@ type: Sky
 url: http://cade.irap.omp.eu/documents/Ancillary/4Aladin/Meisenheimer_500/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ov-gso/P/Meisenheimer/500/SIGMA
-_name: Meisenheimer?s Program 500 microns SIGMA
+_name: Meisenheimer’s Program 500 microns SIGMA
 bandpass: Infrared
 credits: IRAP/CADE
 credits_url: http://cade.irap.omp.eu
@@ -11409,7 +11409,7 @@ type: Sky
 url: http://cade.irap.omp.eu/documents/Ancillary/4Aladin/Taurus_mips3/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: ov-gso/P/URUMQI
-_name: URUMQI
+_name: URUMQI Stokes I
 bandpass: Radio
 credits: IRAP/CADE
 credits_url: http://cade.irap.omp.eu
@@ -11629,7 +11629,7 @@ type: Sky
 url: http://surveys.roe.ac.uk/hips71/UHS/UHSDR1_PIX/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: wfau.roe.ac.uk/P/UKIDSS/GCS/H
-_name: GCSH
+_name: UKIDSS GCS H
 bandpass: Infrared
 credits: ''
 credits_url: ''
@@ -11640,7 +11640,7 @@ type: Sky
 url: http://surveys.roe.ac.uk/hips71/GCS/GCS_H_PIX/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: wfau.roe.ac.uk/P/UKIDSS/GCS/J
-_name: GCSJ
+_name: UKIDSS GCS J
 bandpass: Infrared
 credits: ''
 credits_url: ''
@@ -11651,7 +11651,7 @@ type: Sky
 url: http://surveys.roe.ac.uk/hips71/GCS/GCS_J_PIX/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: wfau.roe.ac.uk/P/UKIDSS/GCS/K1
-_name: GCSK1
+_name: UKIDSS GCS K1
 bandpass: Infrared
 credits: ''
 credits_url: ''
@@ -11662,7 +11662,7 @@ type: Sky
 url: http://surveys.roe.ac.uk/hips71/GCS/GCS_K1_PIX/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: wfau.roe.ac.uk/P/UKIDSS/GCS/K2
-_name: GCSK2
+_name: UKIDSS GCS K2
 bandpass: Infrared
 credits: ''
 credits_url: ''
@@ -11673,7 +11673,7 @@ type: Sky
 url: http://surveys.roe.ac.uk/hips71/GCS/GCS_K2_PIX/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: wfau.roe.ac.uk/P/UKIDSS/GCS/Y
-_name: GCSY
+_name: UKIDSS GCS Y
 bandpass: Infrared
 credits: ''
 credits_url: ''
@@ -11684,7 +11684,7 @@ type: Sky
 url: http://surveys.roe.ac.uk/hips71/GCS/GCS_Y_PIX/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: wfau.roe.ac.uk/P/UKIDSS/GCS/Z
-_name: GCSZ
+_name: UKIDDS GCS Z
 bandpass: Infrared
 credits: ''
 credits_url: ''
@@ -11695,7 +11695,7 @@ type: Sky
 url: http://surveys.roe.ac.uk/hips71/GCS/GCS_Z_PIX/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: wfau.roe.ac.uk/P/UKIDSS/LAS/H
-_name: LASH
+_name: UKIDSS LAS H
 bandpass: Infrared
 credits: ''
 credits_url: ''
@@ -11706,7 +11706,7 @@ type: Sky
 url: http://surveys.roe.ac.uk/hips71/LAS/LAS_H_PIX/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: wfau.roe.ac.uk/P/UKIDSS/LAS/J1
-_name: LASJ1
+_name: UKIDSS LAS J1
 bandpass: Infrared
 credits: ''
 credits_url: ''
@@ -11717,7 +11717,7 @@ type: Sky
 url: http://surveys.roe.ac.uk/hips71/LAS/LAS_J1_PIX/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: wfau.roe.ac.uk/P/UKIDSS/LAS/J2
-_name: LASJ2
+_name: UKIDSS LAS J2
 bandpass: Infrared
 credits: ''
 credits_url: ''
@@ -11728,7 +11728,7 @@ type: Sky
 url: http://surveys.roe.ac.uk/hips71/LAS/LAS_J2_PIX/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: wfau.roe.ac.uk/P/UKIDSS/LAS/K
-_name: LASK
+_name: UKIDSS LAS K
 bandpass: Infrared
 credits: ''
 credits_url: ''
@@ -11739,7 +11739,7 @@ type: Sky
 url: http://surveys.roe.ac.uk/hips71/LAS/LAS_K_PIX/Norder{0}/Dir{1}/Npix{2}
 ---
 _id: wfau.roe.ac.uk/P/UKIDSS/LAS/Y
-_name: LASY
+_name: UKIDSS LAS Y
 bandpass: Infrared
 credits: ''
 credits_url: ''
