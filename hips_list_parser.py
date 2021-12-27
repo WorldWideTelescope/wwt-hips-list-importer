@@ -96,6 +96,7 @@ class Convert(object):
     def __init__(self):
         self.folders_by_name, self.seen_datasets = Folder.load_hierarchy()
         self.image_data = []
+        self.new_datasets = set()
 
         self.root = self.folders_by_name["HiPS Surveys"]
         self.images = self.folders_by_name["Images"]
@@ -225,6 +226,7 @@ class Convert(object):
 
         if ident not in self.seen_datasets:
             folder.children.append(ident)
+            self.new_datasets.add(ident)
 
     # Low-level data munging helpers
 
@@ -327,6 +329,14 @@ def entrypoint():
 
     conv = Convert()
     conv.convert(hips_list_json)
+
+    if conv.new_datasets:
+        print("New datasets in this update:")
+        print()
+        for d in sorted(conv.new_datasets):
+            print(f"    {d}")
+    else:
+        print("No new datasets detected.")
 
     with open("toc.txt", "wt", encoding="utf-8") as f:
         conv.emit_toc(f)
